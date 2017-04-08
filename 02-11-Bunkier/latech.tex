@@ -1,0 +1,94 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{polski}
+\usepackage[utf8x]{inputenc}
+\usepackage[unicode]{hyperref}
+\usepackage{amssymb}
+\usepackage{xifthen}
+\usepackage[fleqn]{amsmath}
+\usepackage{todonotes}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fullpage}
+\usepackage{epstopdf}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\usetikzlibrary{patterns}
+\newcommand{\withtodo}{0}
+
+
+\def\arraystretch{1.2}
+
+
+\begin{document}
+
+\begin{table}
+  \centering
+  \def\arraystretch{1.5}
+    \begin{tabular}{|l|c|r|} \hline
+    Laboratorium Fizyki I                  & \multicolumn{2}{l|}{Data wykonania ćwiczenia:    16.12.15  }  \\
+    Wydział: Fizyki                        & \multicolumn{2}{l|}{Godziny: 8 - 13}                      \\\hline
+    Imiona i nazwiska wykonawców: & Data złożenia sprawozdania: & Nr ćwiczenia:   \\
+    imię nazwisko, imię nazwisko                        &  21.12.15                &                          \\\hline
+    Prowadzący: imię nazwisko              &Ocena końcowa:                      &                                       \\\hline
+  \end{tabular}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.1\textwidth]{howdy.jpg}
+    \caption{Howdy, pardner! I'm your best friend!}
+    \label{flowyyyyyyyy}
+\end{figure}
+
+\section{Cel ćwiczenia}
+\paragraph{lorem ipsusdsdsdsdB}
+
+w tekście $x^2 + y^2$
+
+jako oddzielna linijka
+$$ x^2 + y^2 = z^2 $$
+
+\begin{equation}
+ \frac{1}{N}\frac{dn_E}{dE}=\Big(\frac{4}{\pi}\Big)^{1/2}(kT)^{-3/2}E^{1/2}\exp{\Big(\frac{-E}{kT}\Big)}
+\end{equation}
+
+\begin{equation}
+    \ln{(\frac{I_a}{I_{a0}})} = \frac{-e}{kT}U_a
+\end{equation}
+
+
+\section{Wstęp teoretyczny}
+mech
+
+\{ % to jest
+\section{Opis układu i metody pomiarowej}
+
+\paragraph{}...
+
+\section{Wyniki pomiarów}...
+
+\begin{tabular}{|l|r|r|r|r|}
+\toprule
+{} & \multicolumn{2}{l}{Seria 1} & \multicolumn{2}{l}{Seria 2} \\
+{} &  $U_{a}[\text{mV}]$ &  $U_{a}[\text{m}V]$ &  U$_{a2}$[mV] &  Ia2[$\mu$A] \\
+\midrule
+0  &     -0.0 &        15 &     -0.7 &       150 \\
+1  &    -10.2 &        14 &    -14.3 &       140 \\
+2  &    -16.9 &        13 &    -30.2 &       130 \\
+3  &    -24.9 &        12 &    -47.2 &       120 \\
+4  &    -32.9 &        11 &    -63.5 &       110 \\
+5  &    -42.4 &        10 &    -79.5 &       100 \\
+6  &    -51.9 &         9 &    -98.3 &        90 \\
+7  &    -63.7 &         8 &   -116.5 &        80 \\
+8  &    -75.0 &         7 &   -136.4 &        70 \\
+9  &    -89.3 &         6 &   -157.8 &        60 \\
+10 &   -104.6 &         5 &   -181.2 &        50 \\
+\bottomrule
+\end{tabular}
+\section{Wnioski}
+\paragraph{}...
+
+
+\end{document}

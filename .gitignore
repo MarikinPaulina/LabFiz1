@@ -4,4 +4,7 @@
 *.bbl
 *.blg
 *.out
+*.synctex.gz
+*.swp
+*.fdb_latexmk
 rzeczy

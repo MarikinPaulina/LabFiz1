@@ -59,7 +59,8 @@ n_2 = n_1 \frac{\sin{\alpha}}{\sin{\beta}}
 \end{equation}
 można na podstawie prawa Snella wyznaczyć eksperymentalnie współczynnik załamania danego ośrodka.
 \subsection{Kąt Brewstera}
-
+Na potrzeby badanego zjawiska fale spolaryzowaną rozważymy jako nałożenie się dwóch prostopadłych polaryzacj, z wektorem
+natężenia pola elektrycznego prostopadłym i równoległym do płaszczyzny padania.
 \subsection{Kąt graniczny}
 Jeżeli w pierwotnym ośrodku światło poruszało się szybciej to dla dużych kątów padania dochodzi do sytuacji
 w której kąt załamania przekroczył by $\frac{\pi}{2}$. W takiej sytuacji zjawisko załamania nie występuje i cała fala jest odbita.
@@ -70,10 +71,16 @@ dla kąta granicznego zachodzi rówonść:
  n_1 = \frac{n_2}{\sin{\alpha_{gr}}}
 \end{equation}
 \subsection{Prawo Malusa}
-
-
-
-
+Jeśli kierunek natężnia pola elektrycznego w fali jest stały, to jest ona spolaryzowana liniowo. Po ponownym spolaryzowaniu takiej fali
+przepuszczona pozostanie tylko ta jej część, dla której pole elektryczne było współosiowe z osią polaryzatora. Dla $\theta$ - kąt między osią
+polaryzacji i osią polaryzatora - można to zapisać:
+\begin{equation}
+  E = E_0 \cos{\theta}
+\end{equation}
+lub, przekształcając na natężenie wiązki:
+\begin{equation}
+  I=I_0 \cos^2{\theta}
+\end{equation}
 
 
 \section{Opis układu i metody pomiarowej}
@@ -98,6 +105,14 @@ dla kąta granicznego zachodzi rówonść:
 \bottomrule
 \end{tabular}
 
+\begin{figure}[H]
+  \includegraphics{./snella.png}
+  \caption{}
+  \label{}
+\end{figure}
+
+\subsection{Kąt graniczny}
+
 \subsection{Prawo Malusa}
 \begin{tabular}{lrrrrr}
 \toprule
@@ -110,6 +125,18 @@ dla kąta granicznego zachodzi rówonść:
 4 & 60.0 & 1.118 & 0.1800[mA] & 0.3[mA] & 0.0075[mA] \\
 5 & 75.0 & 1.118 & 43.0[$\mu$A] & 100[$\mu$A] & 2.5[$\mu$A] \\
 6 &  90.0 &  1.118034 & 1.4[$\mu$A] &  3[$\mu$A] &  0.075[$\mu$A] \\
+\bottomrule
+\end{tabular}
+
+\subsection{Współczynnik załamania}
+\begin{tabular}{|l|c|c|}
+  \toprule
+  \hline
+  metoda & współczynnik &niepewność \\
+  pomiarowa & załamania & & \\\hline
+  Prawo Snella & 1.498 & 0.022 \\\hline
+  Kąt Brewstera&  &  \\\hline
+  Kąt graniczny&  &  \\\hline
 \bottomrule
 \end{tabular}
 

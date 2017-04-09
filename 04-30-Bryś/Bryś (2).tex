@@ -153,8 +153,10 @@ były wykonywane co $15^\circ$ obrotu analizatora aż do osiągnięcia $90^\circ
 \subsection{Prawo Snella i kąt Brewstera}
 
 \begin{tabular}{lrrrrrrrr}
+\toprule
 \hline
 {}&$\alpha[^\circ]$&$\beta[^\circ]$&u($\alpha[^\circ]$)&u($\beta[^\circ]$)&$\sin{\alpha}$&$\sin{\beta}$&u($\sin{\alpha}$)&u($\sin{\beta}$) \\
+\midrule
 \hline
 0 & 10.0 &  6.0 & 1.118 & 1.118 & 0.174 & 0.105 & 0.019 & 0.019 \\
 1 & 20.0 & 13.0 & 1.118 & 1.118 & 0.342 & 0.225 & 0.018 & 0.019 \\
@@ -165,20 +167,26 @@ były wykonywane co $15^\circ$ obrotu analizatora aż do osiągnięcia $90^\circ
 6 & 70.0 & 38.5 & 1.118 & 1.118 & 0.9397 & 0.6225 & 0.0067 & 0.0153 \\
 7 & 80.0 & 40.0 & 1.118 & 1.118 & 0.9848 & 0.6428 & 0.0034 & 0.0149 \\
 \hline
+\bottomrule
 \end{tabular}
 
 \begin{figure}[H]
   \includegraphics{./snella.png}
   \caption{Wykres nr 1: Zależność sinusa kąta padania od sinusa kąta załamania wiązki światła przechodzącej przez dielektryk.}
 \end{figure}
-
+W celu sprawdzenia prawa Snella wykreślono zależności z równania (2), tak by przedstawiała sobą zależność linową. Prosta została dopasowana
+przy użyciu funkcji \emph{polyfit} biblioteki \emph{numpy} w Pythonie. Za niepewność wyznaczonego w ten sposób współczynnika wzięto pierwiastek zwróconej
+przez funkcję kowariancji.
+\\Wyznaczony w pomiarach kąt Brewstera wynosi: $\alpha_B = 56.25^\circ(1.1)$
 \subsection{Kąt graniczny}
 Wyznaczony kąt graniczny wynosi: $\alpha_g = 44.0(1.1)^\circ$
 
 \subsection{Prawo Malusa}
 \begin{tabular}{lrrrrr}
+\toprule
 \hline
 {} &$\theta[^\circ]$&u($\theta[^\circ]$)&I&$|z|$&u(I) \\
+\midrule
 \hline
 0 &  0.0 & 1.118 & 0.900[mA] & 1[mA] & 0.025[mA] \\
 1 & 15.0 & 1.118 & 0.820[mA] & 1[mA] & 0.025[mA] \\
@@ -186,18 +194,21 @@ Wyznaczony kąt graniczny wynosi: $\alpha_g = 44.0(1.1)^\circ$
 3 & 45.0 & 1.118 & 0.400[mA] & 1[mA] & 0.025[mA] \\
 4 & 60.0 & 1.118 & 0.1800[mA] & 0.3[mA] & 0.0075[mA] \\
 5 & 75.0 & 1.118 & 43.0[$\mu$A] & 100[$\mu$A] & 2.5[$\mu$A] \\
-6 &  90.0 &  1.118034 & 1.4[$\mu$A] &  3[$\mu$A] &  0.075[$\mu$A] \\
+6 & 90.0 & 1.118 & 1.4[$\mu$A] &  3[$\mu$A] &  0.075[$\mu$A] \\
+\bottomrule
 \hline
 \end{tabular}
+
 \begin{figure}[H]
   \includegraphics{./malus.png}
   \caption{}
 \end{figure}
-
+W celu weryfikacji prawa Malusa wykreślono wykres zależności z równania (8), tak by przedstawiał zależność liniową.
+Prosta została dopasowana przy użyciu funkcji \emph{polyfit} biblioteki \emph{numpy} w Pythonie.
 \subsection{Współczynnik załamania}
 \begin{tabular}{|l|c|c|}
   \hline
-  metoda & współczynnik &niepewność \\
+  Metoda & Współczynnik &Niepewność \\
   pomiarowa & załamania & rozszerzona\\\hline
   Prawo Snella & 1.498 & 0.044 \\\hline
   Kąt Brewstera& 1.497 & 0.022 \\\hline

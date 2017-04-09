@@ -59,8 +59,23 @@ n_2 = n_1 \frac{\sin{\alpha}}{\sin{\beta}}
 \end{equation}
 można na podstawie prawa Snella wyznaczyć eksperymentalnie współczynnik załamania danego ośrodka.
 \subsection{Kąt Brewstera}
-Na potrzeby badanego zjawiska fale spolaryzowaną rozważymy jako nałożenie się dwóch prostopadłych polaryzacj, z wektorem
-natężenia pola elektrycznego prostopadłym i równoległym do płaszczyzny padania.
+Na potrzeby badanego zjawiska fale spolaryzowaną rozważymy jako nałożenie się dwóch fal o prostopadłych polaryzacjach, z wektorem
+pola elektrycznego prostopadłym($\sigma$) i równoległym($\pi$) do płaszczyzny padania. Fala odbita złożona jest z ułamków obu tych fal zależnych
+od kąta padania, przy czym składowa polaryzacji $\sigma$ rośnie monotonicznie wraz ze wzrostem kąta padania, zaś należąca do polaryzacji $\pi$
+początkowo maleje i wzrasta dopiero po osiągnięciu 0. Kąt w którym polaryzacja $\pi$ fali odbitej nie występuje nosi nazwę kąta Brewstera.
+Współczynnik tej polaryzacji jest opisany przes wzór Fresnela:
+\begin{equation}
+  R = \frac{\tg^2({\alpha - \beta})}{\tg^2({\alpha + \beta})}
+\end{equation}
+na podstawie którego można powiedzieć, że kąt Brewstera przypada gdy $\alpha + \beta=\frac{\pi}{2}$, więc $\beta = \frac{\pi}{2}-\alpha$, co
+po podstawieniu do prawa Snella daje:
+\begin{equation}
+  n_1 \sin{\alpha_B} = n_2 \cos{\alpha_B}
+\end{equation}
+i dalej:
+\begin{equation}
+  n_2 = n_1 \tg{\alpha_B}
+\end{equation}
 \subsection{Kąt graniczny}
 Jeżeli w pierwotnym ośrodku światło poruszało się szybciej to dla dużych kątów padania dochodzi do sytuacji
 w której kąt załamania przekroczył by $\frac{\pi}{2}$. W takiej sytuacji zjawisko załamania nie występuje i cała fala jest odbita.
@@ -84,9 +99,27 @@ lub, przekształcając na natężenie wiązki:
 
 
 \section{Opis układu i metody pomiarowej}
-
-\paragraph{}...
-
+Użyte przyrządy
+\begin{itemize}
+  \item laser
+  \item stolik goniometryczny
+  \item fotodetektor z miernikiem
+  \item dwa polaryzatory
+  \item dielektryk w kształcie półwalca
+\end{itemize}
+\subsection{Prawo Snella i kąt Brewstera}
+Najpierw wykonałyśmy pomiary kątów załamania przy przejściu z powietrza do badanej płytki dla kąta padania
+równego $10^\circ$ i kolejnych aż do $80^\circ$ za każdym razem zwiększając kąt $10^\circ$. Kąt padania był zmieniany
+poprzez poruszanie stolika goniometrycznego, do pomiaru kąta załamania służył fotodetektor z którego położenia (przy padającej nań wiązce)
+sczytywany był kąt załamania. Następnie między dwoma pomiarami wyznaczyłyśmy przedział występowania kąta Brewstera i zmieniając kąt padania co
+$1^\circ$ szukałyśmy kąta dla którego suma kątów padania i załamania była równa $90^\circ$.
+\subsection{Kąt graniczny}
+Dielektryk został ustawiony tak by początkowo wiązka przechodziła przez niego i przechodziła do powietrza, początkowy kąt padania był równy 0.
+Następnie zwiększając kąt szukałyśmy takiego, dla którego wiązka załamana propaguje się na powierzchni granicy ośrodków.
+\subsection{Prawo Malusa}
+Fotodetektor został ustawiony na drodze wiązki, a między nim i źródłem światła umiejscowiono dwa polaryzatory. Poprzez manipulacje drugim
+polaryzatorem (dalej nazywanym analizatorem) znaleziono sytuację w której wskazania miernika fotoprądu były najwyższe. Dany kąt analizatora
+został uznany za zerowy. Kolejne pomiary natężenia wiązki były wykonywane co $15^\circ$ obrotu analizatora aż do osiągnięcia $90^\circ$
 \section{Wyniki i analiza pomiarów}
 \subsection{Prawo Snella i kąt Brewstera}
 
@@ -112,7 +145,7 @@ lub, przekształcając na natężenie wiązki:
 \end{figure}
 
 \subsection{Kąt graniczny}
-
+Wyznaczony kąt graniczny wynosi: $\alpha_g = 44.0(1.1)^\circ$
 \subsection{Prawo Malusa}
 \begin{tabular}{lrrrrr}
 \toprule

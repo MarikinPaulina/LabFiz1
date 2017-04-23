@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{polski}
 \usepackage[utf8x]{inputenc}
@@ -62,15 +62,21 @@
 \paragraph{zaś z prawa Curie-Weissa wiemy że:}
 
 \begin{equation}
-\chi = \frac{C}{T - T_c}
+\chi = \frac{C}{T - \theta}
 \end{equation}
 
-\paragraph{gdzie C - stała Curie-Weissa, T - temperatura próbki, $T_c$ - temperatura Curie.}
+\paragraph{gdzie C - stała Curie-Weissa, T - temperatura próbki, $\theta$ - temperatura Curie-Weissa.}
 
-\paragraph{Opisana powyżej podatność jest proporcjonalna do napięcia wtórnego na transformatorze, które będzie mierzone w tym doświadczeniu. W celu wyznaczenia $T_c$ przekształcamy wzór (3) i otrzymujemy:}
+\paragraph{Opisana powyżej podatność jest proporcjonalna do napięcia wtórnego na transformatorze, które będzie mierzone w tym doświadczeniu i indukcyjności opisanej przez zależność:}
 
 \begin{equation}
-\frac{1}{\chi} = \frac{1}{C} T - \frac{T_c}{C}
+B = \mu_0 H + \mu_0 M(T)
+\end{equation}
+
+W celu wyznaczenia $T_c$ przekształcamy wzór (3) i otrzymujemy:
+
+\begin{equation}
+\frac{1}{\chi} = \frac{1}{C} T - \frac{\theta}{C}
 \end{equation}
 
 \paragraph{Przedstawiona zależność odwrotności podatności od temperatury jest zależnością liniową.}
@@ -93,9 +99,9 @@ elu wychłodzenia układu i po odczekaniu chwili wyłączono komputer oraz odł�
 \section{Wyniki pomiarów}
 
 \begin{tabular}{lrrrr}
-\toprule
+\hline
 {} &T($^\circ$C)&delta T($^\circ$C)&U[mV]&delta U[mV]\\
-\midrule
+\hline
 0  &   20.0 &  5.100 &  452.0 &  11.780 \\
 1  &   95.0 &  5.475 &  452.0 &  11.780 \\
 2  &  117.0 &  5.585 &  449.0 &  11.735 \\
@@ -128,24 +134,26 @@ elu wychłodzenia układu i po odczekaniu chwili wyłączono komputer oraz odł�
 29 &  206.0 &  6.030 &   20.0 &   5.300 \\
 30 &  208.0 &  6.040 &   19.0 &   5.285 \\
 31 &  211.0 &  6.055 &   18.0 &   5.270 \\
-\bottomrule
+\hline
 \end{tabular}
 
 \section{Analiza pomiarów}
 
 \begin{figure}[H]
   \includegraphics{./Curie_proste.png}
-  \caption{Wykres zależności $U(T)$ z prostą dla maksymalnego napięcia i prostą dopasowaną do obszaru przejściowego}
+  \caption{Wykres zależności $U(T)$ z prostą dla maksymalnego napięcia i prostą dla napięcia minimalnego}
 \end{figure}
 
 Na wykresie 1 wartości napięcia utrzymują mniej-więcej(w zakresie błędów pomiarowych) stały poziom dla temperatur poniżej 128$^\circ$C (452mV
-- wynikający z maksymalnego namagnesowania rdzenia)i temperatur powyżej 201$^\circ$C (18mV). Prosta dopasowana do pozostałych pomiarów leży najpierw
-poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którąz w związku z tym możemy uznać za
-temperature Curie.
+- wynikający z maksymalnego namagnesowania rdzenia)i temperatur powyżej 201$^\circ$C (18mV). 
 
 \begin{figure}[H]
   \includegraphics{./Curie_odwrotnosc.png}
-  \caption{Wykres zależności $\frac{1}{U}$(T) dla fazy paramagnetyka po odjęciu napięcia indukowanego}
+  \caption{Wykres zależności $\frac{1}{U}$(T) dla fazy paramagnetyka}
+\end{figure}
+\begin{figure}[H]
+  \includegraphics{./Curie_odjete.png}
+  \caption{Wykres zależności $\frac{1}{U-U_{min}$(T) dla fazy paramagnetyka}
 \end{figure}
 
 Zgodnie z prawem Curie-Weissa wykres 2 powinien być linią prostą, jednak nią, ponad wszelką wątpliwość, nie jest.
@@ -156,10 +164,11 @@ Niepewności pomiarów temperatury została wyliczona jako iloczyn danego pomiar
 Niepewności napięcia wyliczono tożsamą metodą dla klasy 0.01 i dodając 1mV.
 Jakoże metody użyte w analizie wyników nie były ściśle analityczne nie było możliwości wyliczenia niepewności temperatury Curie jednak
 biorąc pod uwagę metodę analizy i niepewności pomiarów temperatury była by ona relatywnie wysoka (kilkanaście lub więcej stopni).
-
+Pozostałe niepewności na wykresach zostały wyliczone przy użyciu metody propagacji niepewności.
+ 
 \section{Wnioski}
 Biorąc pod uwagę niepewność temperatury Curie, metoda, której użyto w tym doświadczeniu jest niedokładna i  nie nadaje się do jej wyznaczenia.
-Zależności wyliczone na podstawie wzoru (4) i przedstawione na wykresie 2 wykazują, że uzyskane pomiary w badaniu nie zgadzają się ze wstępnymi zalożeniami teoretycznymi.
+Zależności wyliczone na podstawie wzoru (4) i przedstawione na wykresie 2 nienadają się do analizy ze względu na zbyt duże niepewności i nie pozwalają na potwierdzenie bądź odrzucenie tezy. 
 
 
 \end{document}

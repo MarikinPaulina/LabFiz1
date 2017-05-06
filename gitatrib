@@ -5,6 +5,7 @@
 # to native line endings on checkout.
 *.c text
 *.h text
+*.ipynb text
 
 # Declare files that will always have CRLF line endings on checkout.
 * text eol=crlf

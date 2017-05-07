@@ -26,13 +26,13 @@
 \begin{table}
   \centering
   \def\arraystretch{1.5}
-    \begin{tabular}{|l|l|l|l|} \hline
-    Wydział:           & \multicolumn{2}{l|}{Dzień:Poniedziałek 14-17}    &Zespół:  \\
-    Fizyki             &    \multicolumn{2}{l|}{Data: 20.03.2017}         &8             \\\hline
+    \begin{tabular}{ l l l l } \hline
+    Wydział:           & \multicolumn{2}{l }{Dzień:Poniedziałek 14-17}    &Zespół:  \\
+    Fizyki             &    \multicolumn{2}{l }{Data: 20.03.2017}         &8             \\\hline
     Imiona i nazwiska: &Ocena z przygotowania:  &Ocena ze sprawozdania:   &Ocena końcowa: \\
     Marta Pogorzelska  &                        &                         &                \\
     Paulina Marikin    &                        &                         &\\\hline
-    \multicolumn{2}{|l|}{Prowadzący:                 } &\multicolumn{2}{l|}{Podpis:             }  \\\hline
+    \multicolumn{2}{ l }{Prowadzący:                 } &\multicolumn{2}{l }{Podpis:             }  \\\hline
   \end{tabular}
 \end{table}
 
@@ -54,145 +54,100 @@ W skład układu pomiarowego dla lampy rtęciowej wchodzą:
   \item zasilacz z możliwocią regulacji napięcia żarzenia, napięcia hamowania i napięcia przyspieszającego
   \item cztery woltomierze mierzące powyższe napięcia i napięcie anodowe
 \end{itemize}
-Układ pomiarowy dla noeonu jest podobny jednak nie zawiera pieca, termopary ani wentylatora, gdyż neon w temperaturze pokojowej jest w stanie gazowym. Zawiera zaś niewystępującą w
+Układ pomiarowy dla neonu jest podobny jednak nie zawiera pieca, termopary ani wentylatora, gdyż neon w temperaturze pokojowej jest w stanie gazowym. Zawiera zaś niewystępującą w
 zestawie rtęci siatkę pozwalającą na ukierunkowanie strumienia elektronów.\\
 W dowiadczeniu najpierw podgrzano rtęć do postaci gazowej. Następnie ustalono, stałe przez całe doświadczenie napięcie żarzenia i napięcie hamowania. Mierzone było napięcie
 anodowe (będące wprost proporcjonalne do prądu anodowego) w zależności o zmienianego przez eksperymentatora napięcia przyspieszającego w zakresie od 0 do 30 voltów. Doświadczenie
 dla neonu przebiegało analogicznie. Jedynymi różnicami był brak początkowego podgrzewania i zakres napięcia przyspieszającego od 0 do 70 voltów.
 
 \section{Wyniki pomiarów}
-Rtęć
-\begin{tabular}{lrr}
-\toprule
-{} &  U[V] &  Ua[V] \\
-\midrule
-0  &   0.2 &   3.12 \\
-1  &   0.5 &   3.18 \\
-2  &   2.6 &   3.82 \\
-3  &   3.6 &   3.01 \\
-4  &   4.5 &   2.85 \\
-5  &   5.5 &   3.75 \\
-6  &   6.6 &   4.26 \\
-7  &   7.6 &   4.11 \\
-8  &   8.2 &   3.69 \\
-9  &   9.0 &   4.15 \\
-10 &   9.4 &   4.85 \\
-11 &  10.6 &  10.60 \\
-12 &  11.0 &  12.10 \\
-13 &  11.3 &  13.77 \\
-14 &  11.6 &  13.18 \\
-15 &  12.5 &   6.42 \\
-16 &  13.1 &   4.59 \\
-17 &  13.3 &   4.31 \\
-18 &  13.5 &   4.65 \\
-19 &  14.2 &   5.69 \\
-20 &  15.2 &  11.26 \\
-21 &  15.7 &  16.60 \\
-22 &  16.2 &  19.70 \\
-23 &  16.4 &  19.89 \\
-24 &  16.6 &  18.22 \\
-25 &  17.6 &   7.65 \\
-26 &  18.0 &   5.91 \\
-27 &  18.3 &   5.17 \\
-28 &  18.9 &   5.87 \\
-29 &  20.0 &  12.68 \\
-30 &  20.5 &  18.78 \\
-31 &  20.8 &  23.37 \\
-32 &  21.1 &  26.53 \\
-33 &  21.4 &  27.97 \\
-34 &  21.7 &  26.70 \\
-35 &  22.7 &  12.85 \\
-36 &  23.2 &   9.50 \\
-37 &  23.5 &   8.41 \\
-38 &  23.9 &   9.06 \\
-39 &  24.5 &  11.47 \\
-40 &  25.1 &  19.38 \\
-41 &  26.1 &  32.45 \\
-42 &  26.4 &  34.67 \\
-43 &  26.8 &  34.68 \\
-44 &  27.2 &  31.35 \\
-45 &  28.2 &  19.44 \\
-46 &  28.6 &  17.12 \\
-47 &  29.2 &  16.76 \\
-48 &  29.5 &  18.05 \\
-49 &  30.5 &  28.12 \\
-50 &  30.9 &  33.55 \\
-\bottomrule
+\paragraph{Rtęć}
+\begin{tabular}{lrrrrrrrrrrrrr}
+{} &    0  &    1  &    2  &    3  &    4  &    5  &    6  &    7  &    8  &    9  &    10 &    11 &    12 \\
+U[V]  &  0.20 &  0.50 &  2.60 &  3.60 &  4.50 &  5.50 &  6.60 &  7.60 &  8.20 &  9.00 &  9.40 &  10.6 &  11.0 \\
+Ua[V] &  3.12 &  3.18 &  3.82 &  3.01 &  2.85 &  3.75 &  4.26 &  4.11 &  3.69 &  4.15 &  4.85 &  10.6 &  12.1 \\
 \end{tabular}
-\\Neon
-\begin{tabular}{lrr}
-\toprule
-{} &  U[V] &  Ua[V] \\
-\midrule
-0  &   0.0 &   0.86 \\
-1  &   1.1 &   0.85 \\
-2  &   2.3 &   0.97 \\
-3  &   3.5 &   0.85 \\
-4  &   5.1 &   1.06 \\
-5  &   6.0 &   1.45 \\
-6  &   7.4 &   1.86 \\
-7  &   8.8 &   2.13 \\
-8  &   9.7 &   2.33 \\
-9  &  10.6 &   2.55 \\
-10 &  11.3 &   2.63 \\
-11 &  12.4 &   2.84 \\
-12 &  13.7 &   3.02 \\
-13 &  14.9 &   3.23 \\
-14 &  15.8 &   3.41 \\
-15 &  16.8 &   3.51 \\
-16 &  18.1 &   3.12 \\
-17 &  20.3 &   1.67 \\
-18 &  20.9 &   1.57 \\
-19 &  21.5 &   1.42 \\
-20 &  22.0 &   1.23 \\
-21 &  22.7 &   1.72 \\
-22 &  23.7 &   3.42 \\
-23 &  25.0 &   6.11 \\
-24 &  25.3 &   6.52 \\
-25 &  26.0 &   7.76 \\
-26 &  28.0 &  10.03 \\
-27 &  28.5 &  10.44 \\
-28 &  29.1 &  10.80 \\
-29 &  30.0 &  11.07 \\
-30 &  31.1 &  11.78 \\
-31 &  32.6 &  12.37 \\
-32 &  33.7 &  12.69 \\
-33 &  34.5 &  11.42 \\
-34 &  36.6 &   5.56 \\
-35 &  37.5 &   3.34 \\
-36 &  38.5 &   2.02 \\
-37 &  39.5 &   2.04 \\
-38 &  40.6 &   4.90 \\
-39 &  42.3 &  10.09 \\
-40 &  43.3 &  12.71 \\
-41 &  44.3 &  14.85 \\
-42 &  45.3 &  16.33 \\
-43 &  46.5 &  17.88 \\
-44 &  47.0 &  18.27 \\
-45 &  47.5 &  18.77 \\
-46 &  48.0 &  19.27 \\
-47 &  49.0 &  19.96 \\
-48 &  49.5 &  20.21 \\
-49 &  50.0 &  20.52 \\
-50 &  51.0 &  20.49 \\
-51 &  51.5 &  19.58 \\
-52 &  54.0 &  11.11 \\
-53 &  56.0 &   5.55 \\
-54 &  56.5 &   5.53 \\
-55 &  57.0 &   6.43 \\
-56 &  57.5 &   7.48 \\
-57 &  60.0 &  14.01 \\
-58 &  63.0 &  22.51 \\
-59 &  64.1 &  24.77 \\
-60 &  65.0 &  26.57 \\
-61 &  66.0 &  28.18 \\
-62 &  66.6 &  29.21 \\
-63 &  67.1 &  29.76 \\
-64 &  67.6 &  30.31 \\
-65 &  68.1 &  30.14 \\
-66 &  68.6 &  29.61 \\
-67 &  70.0 &  26.33 \\
-\bottomrule
+
+\begin{tabular}{l rrrrrrrrrrrr}
+{} &     14 &     15 &     16 &     17 &     18 &     19 &     20 &    21 &    22 &     23 &     24 &     25 \\
+U[V]  &  11.60 &  12.50 &  13.10 &  13.30 &  13.50 &  14.20 &  15.20 &  15.7 &  16.2 &  16.40 &  16.60 &  17.60 \\
+Ua[V] &  13.18 &   6.42 &   4.59 &   4.31 &   4.65 &   5.69 &  11.26 &  16.6 &  19.7 &  19.89 &  18.22 &   7.65 \\
+\end{tabular}
+
+\begin{tabular}{l rrrrrrrrrrrr}
+{} &     27 &     28 &     29 &     30 &     31 &     32 &     33 &    34 &     35 &    36 &     37 &     38 \\
+U[V]  &  18.30 &  18.90 &  20.00 &  20.50 &  20.80 &  21.10 &  21.40 &  21.7 &  22.70 &  23.2 &  23.50 &  23.90 \\
+Ua[V] &   5.17 &   5.87 &  12.68 &  18.78 &  23.37 &  26.53 &  27.97 &  26.7 &  12.85 &   9.5 &   8.41 &   9.06 \\
+\end{tabular}
+
+\begin{tabular}{l rrrrrrrrrrr}
+{} &     40 &     41 &     42 &     43 &     44 &     45 &     46 &     47 &     48 &     49 &     50 \\
+U[V]  &  25.10 &  26.10 &  26.40 &  26.80 &  27.20 &  28.20 &  28.60 &  29.20 &  29.50 &  30.50 &  30.90 \\
+Ua[V] &  19.38 &  32.45 &  34.67 &  34.68 &  31.35 &  19.44 &  17.12 &  16.76 &  18.05 &  28.12 &  33.55 \\
+\end{tabular}
+\paragraph{Neon}\\
+\begin{tabular}{lrrrrrrrrrrrr}
+{} &    0  &    1  &    2  &    3  &    4  &    5  &    6  &    7  &    8  &     9  &     10 &     11 \\
+U[V]  &  0.00 &  1.10 &  2.30 &  3.50 &  5.10 &  6.00 &  7.40 &  8.80 &  9.70 &  10.60 &  11.30 &  12.40 \\
+Ua[V] &  0.86 &  0.85 &  0.97 &  0.85 &  1.06 &  1.45 &  1.86 &  2.13 &  2.33 &   2.55 &   2.63 &   2.84 \\
+\end{tabular}
+\begin{tabular}{lrrrrrrrrrrr}
+{} &     13 &     14 &     15 &     16 &     17 &     18 &     19 &     20 &     21 &     22 &     23 \\
+U[V]  &  14.90 &  15.80 &  16.80 &  18.10 &  20.30 &  20.90 &  21.50 &  22.00 &  22.70 &  23.70 &  25.00 \\
+Ua[V] &   3.23 &   3.41 &   3.51 &   3.12 &   1.67 &   1.57 &   1.42 &   1.23 &   1.72 &   3.42 &   6.11 \\
+\end{tabular}
+
+\begin{tabular}{lrrrrrrrrrrr}
+
+{} &     25 &     26 &     27 &    28 &     29 &     30 &     31 &     32 &     33 &     34 &     35 \\
+
+U[V]  &  26.00 &  28.00 &  28.50 &  29.1 &  30.00 &  31.10 &  32.60 &  33.70 &  34.50 &  36.60 &  37.50 \\
+Ua[V] &   7.76 &  10.03 &  10.44 &  10.8 &  11.07 &  11.78 &  12.37 &  12.69 &  11.42 &   5.56 &   3.34 \\
+
+\end{tabular}
+
+\begin{tabular}{lrrrrrrrrrrr}
+
+{} &     37 &    38 &     39 &     40 &     41 &     42 &     43 &     44 &     45 &     46 &     47 \\
+
+U[V]  &  39.50 &  40.6 &  42.30 &  43.30 &  44.30 &  45.30 &  46.50 &  47.00 &  47.50 &  48.00 &  49.00 \\
+Ua[V] &   2.04 &   4.9 &  10.09 &  12.71 &  14.85 &  16.33 &  17.88 &  18.27 &  18.77 &  19.27 &  19.96 \\
+
+\end{tabular}
+
+\begin{tabular}{lrrrrrrrrrrr}
+
+{} &     49 &     50 &     51 &     52 &     53 &     54 &     55 &     56 &     57 &     58 &     59 \\
+
+U[V]  &  50.00 &  51.00 &  51.50 &  54.00 &  56.00 &  56.50 &  57.00 &  57.50 &  60.00 &  63.00 &  64.10 \\
+Ua[V] &  20.52 &  20.49 &  19.58 &  11.11 &   5.55 &   5.53 &   6.43 &   7.48 &  14.01 &  22.51 &  24.77 \\
+
+\end{tabular}
+
+\begin{tabular}{lrrrrrr}
+
+{} &     61 &     62 &     63 &     64 &     65 &     66 \\
+
+U[V]  &  66.00 &  66.60 &  67.10 &  67.60 &  68.10 &  68.60 \\
+Ua[V] &  28.18 &  29.21 &  29.76 &  30.31 &  30.14 &  29.61 \\
+
+\end{tabular}
+\section{Analiza wyników}
+\begin{figure} [H]
+	\right
+  \includegraphics{./rtec.png}
+  %\caption{}
+  \label{}
+\end{figure}
+\begin{tabular}{cc|cc}
+  \multicolumn{2}{l |}{Minimum}}&\multicolumn{2}{l }{Maksimum}\\
+  U[V] & I[nA] & U[V] & I[nA] \\
+  4.5  & 28.5  & 6.6  & 42.6  \\
+  8.2  & 36.9  & 11.3 & 137.7 \\
+  14.3 & 43.1  & 16.4 & 198.9 \\
+  18.3 & 51.7  & 21.4 & 279.7 \\
+  23.5 & 84.1  & 26.4 & 346.8 \\
+  29.2 & 167.6 && \\
 \end{tabular}
 \section{Analiza niepewności}
 

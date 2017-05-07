@@ -51,8 +51,8 @@ dla cząstek jedno i dwu atomowych, nie wpływa znacząco na interakcje z otocze
   \kappa = \frac{c_p}{c_V} = 1+\frac{1}{n}
 \end{equation}
 $c_p$ - ciepło własćiwe przy stałym ciśnieniu, $c_V$ - ciepło właściwe przy stałej objętości, n - liczba stopni swobody.
-\\\\W tym doświadczeniu jege wartość dla powietrza została wyznaczona metodą Laplac'a, wiążącą równania terodynamiczne z zachowaniem fali akustycznej. Falą taką jest podłużna
-fala mechanicznaoscylująca w zakresie słyszalnym dla człowieka. Jej ruch to okresowa kompresja i dekompresja ośrodka zachodząca adiabatycznie, można więc do jego opisania stosować
+\\\\W tym doświadczeniu jego wartość dla powietrza została wyznaczona metodą Laplace'a, wiążącą równania termodynamiczne z zachowaniem fali akustycznej. Falą taką jest podłużna
+fala mechaniczna oscylująca w zakresie częstotliwości słyszalnych dla człowieka. Jej ruch to okresowa kompresja i dekompresja ośrodka zachodząca adiabatycznie, można więc do jego opisania stosować
 równanie adiabaty z którego, w połączeniu z równaniem falowym i równaniem Clapeyrona otrzymujemy:
 
 \begin{equation}
@@ -73,9 +73,9 @@ Użyte przyrządy:
 	\item wzmacniacz sygnału
   \item termometr z podziałką $2^\circ C$
 \end{itemize}
-Oscyloskop został ustawiony na tryb X-Y pokazujący krzywą eliptyczną gdzie x to sygnał z generatora, a y z mikrofonu. W celu wyznaczenia kolejnych długości fali mierzone były
-odległości między kolejnymi węzłami, za które uznano maksymalne zwężenie krzywej eliptycznej do prostej. W celu uzyskania kolejnych  wezłów manipulowano tłokiem z doczepionym mikrofonem.
-Zamiast okresu dla każdej z fal została zmierzona częstotliwość $\omega = 2 \pi T$, mierzona jako odległość między kolejnymi maksimami fali stojącje na
+Oscyloskop został ustawiony na tryb X-Y, w którym pokazywał krzywą eliptyczną w której x to sygnał z generatora, a y z mikrofonu. W celu wyznaczenia kolejnych długości fali mierzone były
+odległości między kolejnymi węzłami, za które uznano maksymalne zwężenie krzywej eliptycznej do prostej. W celu uzyskania kolejnych węzłów manipulowano tłokiem z doczepionym mikrofonem.
+Zamiast okresu dla każdej z fal została zmierzona częstotliwość $\omega = 2 \pi T$, mierzona jako odległość między kolejnymi maksimami fali stojącej na
 obrazie z oscyloskopu. Temperatura została zmierzona raz, po wykonaniu pozostałych pomiarów.
 
 \section{Pomiary}
@@ -137,7 +137,7 @@ Niepewności temperatury i okresu wyliczono z niepewności aparaturowych i ekspe
   \Delta(x) = \sqrt{\frac{x_a^2}{3}+\frac{x_e^2}{3}}
 \end{equation}
 gdzie $x_a$ - niepewność aparatury, zaś $x_e$ - niepewność eksperymentatora równa połowie niepewności aparatury.\\
-Za niepewność długości fali został wzięty pierwiastek z kowariancji dopasowanej prostej zwróconej przez funkcję \emph{polyfit} biblioteki \emph{numpy} w Pythonie.
+Za niepewność długości fali przyjęto pierwiastek z kowariancji dopasowanej prostej zwróconej przez funkcję \emph{polyfit} biblioteki \emph{numpy} w Pythonie.
 Niepewności częstotliwości i współczynnika adiabaty zostały wyznaczone przy użyciu metody propagacji niepewności.\\
 Częstotliwość:
 \begin{equation}
@@ -151,7 +151,8 @@ $\kappa$:
 \section{Wnioski}
 Wszystkie wartości $\kappa$ są zbliżone do przewidywanego wyniku 1.4. Potwierdza to teoretyczne przewidywania dla modelu gazu doskonałego.
 \\
-Zjawisko rezonansu akustycznego pozwala na dokładne i łatwo wykonane wyznaczanie współczynnika adiabaty.Chociaż finalna niepewność jest relatywnie mała (poniżej 1\% wyniku) głównym czynnikiem ją generującym jest temperatura, której dokładność można łatwo poprawić używając lepszego termometru. Także, nieuwzględniane w opracowaniu zmiany temperatury w trakcie doświadczenia mogły prowadzić do odchyleń wyniku. Otrzymana na końcu $\kappa$ dla powietrza wynosi:
+Zjawisko rezonansu akustycznego pozwala na dokładne i łatwo wykonane wyznaczanie współczynnika adiabaty.Chociaż finalna niepewność jest relatywnie mała (poniżej 1\% wyniku) głównym czynnikiem ją generującym jest temperatura, której dokładność można łatwo poprawić używając lepszego termometru. Także, nieuwzględniane w opracowaniu zmiany temperatury w trakcie doświadczenia mogły prowadzić do odchyleń wyniku.
+Otrzymana na końcu $\kappa$ dla powietrza wynosi:
 \\ $\kappa = 1.4311$\\
 
 

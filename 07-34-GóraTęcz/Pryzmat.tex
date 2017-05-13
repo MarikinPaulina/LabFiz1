@@ -42,19 +42,63 @@
 Celem doświadczenia było wyznaczenie krzywej dyspersji danego pryzmatu prostego.
 
 \section{Wstęp teoretyczny}
-Dyspersja jest własnością optyczną materiałów zgodnie z którą, prędkość fali elektromagnetycznej poruszającej się przez dany materiał jest zależna od jej częstotliwości
-
+Dyspersja jest własnością optyczną materiałów zgodnie z którą, prędkość fali elektromagnetycznej poruszającej się przez dany materiał jest zależna od jej częstotliwości.
+Ponieważ współczynnik załamania danego ośrodka jest zależny od tejże prędkości, on także będzie się zmieniał w zależności od częstotliwości fali. W przypadku światła zawierającego
+więcej niż jedną częstotliwość zostanie ono rozdzielone na pojedyńcze wiązki.
 
 \section{Opis układu i metody pomiarowej}
 
-\paragraph{}...
 
-\section{Wyniki pomiarów}...
+\section{Wyniki pomiarów}
+Kąt łamiący pryzmatu: $60^\circ$
+Kąt zerowy: $45^\circ 30'$
+\subsection{Pomiary dla sodu}
+\begin{itemize}
+  \item żółty (dlugość fali) $346^\circ 50'$ %Nie przepisałyśmy długości fali, trzeba dopytac o to Marty
+  \item zielony (dlugość fali) $145^\circ 30'$
+\end{itemize}
+\subsection{Pomiary dla neonu}
+\begin{tabular}{lrrr}
+{} &  $\lambda[nm]$ &  $\alpha[^\circ]$ &  $\alpha[']$ \\
+0  &         654 &          348 &          18 \\
+1  &         651 &          348 &          10 \\
+2  &         641 &          348 &           0 \\
+3  &         614 &          347 &          46 \\
+4  &         610 &          347 &          40 \\
+5  &         603 &          347 &          26 \\
+6  &         591 &          347 &          10 \\
+7  &         588 &          347 &           0 \\
+8  &         540 &          346 &          20 \\
+9  &         534 &          346 &          10 \\
+10 &         470 &          345 &          48 \\
+11 &         454 &          344 &          44 \\
+\end{tabular}
+
+\section{Analiza pomiarów}
+%Do wykresu dorobię jeszcze dopasowaną krzywą i zrzutuję nań pomiary z sodu i naniosę niepewności
+\begin{figure} [H]
+  \includegraphics{./dyspersja.png}
+  \caption{}
+  \label{}
+\end{figure}
 
 \section{Analiza niepewności}
+Za niepewność pomiaru wzięto:
+\begin{equation}
+  \Delta \alpha = sqrt{(\frac{\Delta_k}{3})^2+(\frac{\Delta_o}{3})^2}
+\end{equation}
+gdzie $\Delta_k$ - podziałka kątomierza: 2', a $\Delta_o$ - niepewność eksperymentatora: 2'.\\
+Dalsze niepewności wyliczano metodą propagacji niepewności:
+\begin{itemize}
+  \item Kąt łamiący pryzmatu
+  \begin{equation}
+    \Delta \varphi = sqrt{(\frac{\Delta \alpha_L}{2})^2+(\frac{\Delta \alpha_P}{2})^2}
+  \end{equation}
+  \item Kąt najmniejszego odchylenia %Oba są zasadniczo gotowe, tylko muszę je przestukać
+  \item Wspołczynnik załamania
+\end{itemize}
 
 \section{Wnioski}
-\paragraph{}...
 
 
 \end{document}

@@ -18,7 +18,7 @@
 \newcommand{\withtodo}{0}
 
 
-\def\arraystretch{1.2}
+\def\arraystretch{1}
 
 
 \begin{document}
@@ -193,18 +193,18 @@ Z uzyskanych wynikow można wyliczyć różnicę napięć miedzy kolejnymi maksi
 \\\\
 \begin{tabular}{|l|cc|cc|}
 \hline
-{} &  \multicolumn{2}{l |}{Rtęc}&\multicolumn{2}{l }{Neon}\\\hline
+{} &  \multicolumn{2}{c |}{Rtęc}&\multicolumn{2}{c |}{Neon}\\\hline
 {} & Z minimow & Z maksimow & Z minimow & Z maksimow \\\hline
 rożnica napiec[V]& 4.94(6)& 5.05(7) & 17.25(30) & 16.93(23) \\\hline
-energia wzbudzenia&    %Jednostki eV czy J?
+energia wzbudzenia[eV]& 4.94(6)& 5.05(7) & 17.25(30) & 16.93(23)\\\hline
 \end{tabular}
 
 \section{Analiza niepewności}
 Niepewności pomiarów zostały wyliczone ze wzoru:
 \begin{equation}
-  \Delta U = U*klasa + 1*rozdzielczość
+  \Delta U = U*klasa + 1*rozdzielczosc
 \end{equation}
-Gdzie za klasę wzięto klasę używanego woltomierza równą 0.01, zaś za rozdzielczość %Jak to ując?
+Gdzie za klasę wzięto klasę używanego woltomierza równą 0.01, zaś za rozdzielczość, najmniejsze możliwe wskazanie woltomierza w danym ustawieniu.
 \\
 W celu otrzymania niepewności prądu anodowego przeskalowano niepewność odpowiadającego mu napięcia anodowego przez ten sam czynnik skalujący co wcześniej same napięcia.
 Wreszcie, niepewności różnic napięć wyliczono metodą propagacji niepewności:
@@ -213,6 +213,5 @@ Wreszcie, niepewności różnic napięć wyliczono metodą propagacji niepewnoś
 \end{equation}
 
 \section{Wnioski}
-Otrzymane wyniki dla maksimow i minimow są tożsame dla dwoch przedziałow %Czy dla jednego?
- niepewnosci. Wyniki dla rtęci są także zgodne z wynikami uzyskanymi przez Franca i Hertza w 1913r. Wartosci dla neonu są poniżej tablicowego 18.7V.
+Otrzymane wyniki dla maksimów i minimów są zgodne w dwóch przedziałach niepewności. Wartosci dla rtęci są także zgodne z wynikami uzyskanymi przez Franca i Hertza w 1913r: 4.9V. Wyniki dla neonu są nieco poniżej tablicowego 18.7V, jednak ogólny kształt wykresu został zachowany. W obu przypadkach wartości wyliczone z minimów są bliższe tablicowym.  
 \end{document}

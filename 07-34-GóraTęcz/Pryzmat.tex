@@ -42,9 +42,37 @@
 Celem doświadczenia było wyznaczenie krzywej dyspersji danego pryzmatu prostego.
 
 \section{Wstęp teoretyczny}
-Dyspersja jest własnością optyczną materiałów zgodnie z którą, prędkość fali elektromagnetycznej poruszającej się przez dany materiał jest zależna od jej częstotliwości.
-Ponieważ współczynnik załamania danego ośrodka jest zależny od tejże prędkości, on także będzie się zmieniał w zależności od częstotliwości fali. W przypadku światła zawierającego
-więcej niż jedną częstotliwość zostanie ono rozdzielone na pojedyńcze wiązki.
+Dyspersja jest własnością optyczną materiałów zgodnie z którą, prędkość fali elektromagnetycznej poruszającej się przez dany materiał jest zależna od jej częstotliwości. 
+%\begin{equation}
+%v = \frac{c}{\lambda}
+%\end{equation}
+%, gdzie v - prędkość fali elektromagnetycznej w danym ośrodku, c - prędkość światła w próżni, $\lambda$ - długość fali
+Ponieważ współczynnik załamania danego ośrodka jest zależny od tejże prędkości, on także będzie się zmieniał w zależności od częstotliwości fali.
+\begin{equation}
+n(\nu) = \frac{c}{v(\nu)}
+\end{equation}
+, gdzie n - współczynnik załamania światła, c - prędkość światła w próżni, v - prędkość światła w danym ośrodku, $\nu$ - częstotliwość fali
+
+W przypadku światła białego, zawierającego fale o różnych częstotliwościach, zostanie ono rozszczepione na pojedyńcze wiązki, załamujące się pod innym kątem.
+
+Wiązka światła monochromatycznego przy przechodzeniu przez pryzmat odchyla się o kąt $\varepsilon$, zawarty między pierwotnym jej biegiem a wiązką załamaną. 
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{./epsilon.png}
+  \caption{Kąt odchylenia $\varepsilon$ wiązki światła przy przechodzeniu przez pryzmat.}
+  \label{}
+\end{figure}
+
+Kąt odchylenia $\varepsilon$ zależy m.in. on od kąta padania $\alpha$ i jest najmniejszy w sytuacji, gdy kąt padania $\alpha_1$ i kąt wyjścia $\alpha_2$ są równe. Jest to tzw. "przebieg symetryczny", dla którego, w oparciu o prawo Snelliusa, zachodzi równość:
+ \begin{equation}
+n = \frac{\sin \frac{\varepsilon_{min}+\varphi}{2}}{\sin \frac{\varphi}{2}}
+\end{equation}
+\begin{figure} [H]
+  \centering
+  \includegraphics{./epsilon_min.png}
+  \caption{Kąt najmniejszego odchylenia $\varepsilon_{min}$ dla tzw. przebiegu symetrycznego.}
+  \label{}
+\end{figure}
 
 \section{Opis układu i metody pomiarowej}
 

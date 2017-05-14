@@ -85,17 +85,24 @@ Kąt zerowy: $45^\circ 30'$
 \section{Analiza niepewności}
 Za niepewność pomiaru wzięto:
 \begin{equation}
-  \Delta \alpha = sqrt{(\frac{\Delta_k}{3})^2+(\frac{\Delta_o}{3})^2}
+  \Delta \alpha = \sqrt{(\frac{\Delta_k}{3})^2+(\frac{\Delta_o}{3})^2}
 \end{equation}
-gdzie $\Delta_k$ - podziałka kątomierza: 2', a $\Delta_o$ - niepewność eksperymentatora: 2'.\\
+gdzie $\Delta_k$ - podziałka kątomierza: $2'$, a $\Delta_o$ - niepewność eksperymentatora: $2'$.\\
 Dalsze niepewności wyliczano metodą propagacji niepewności:
 \begin{itemize}
   \item Kąt łamiący pryzmatu
   \begin{equation}
-    \Delta \varphi = sqrt{(\frac{\Delta \alpha_L}{2})^2+(\frac{\Delta \alpha_P}{2})^2}
+    \Delta \varphi = \sqrt{(\frac{\Delta \alpha_L}{2})^2+(\frac{\Delta \alpha_P}{2})^2}
   \end{equation}
-  \item Kąt najmniejszego odchylenia %Oba są zasadniczo gotowe, tylko muszę je przestukać
+  \item Kąt najmniejszego odchylenia
+  \begin{equation}
+    \Delta \varepsilon_{min} = \sqrt{(\Delta \alpha)^2+(\Delta \alpha_0)}
+  \end{equation}
   \item Wspołczynnik załamania
+  \begin{equation}
+    \Delta n = \sqrt{(\Delta \varphi \frac{\sin{\left (\frac{\varepsilon_{min}}{2} \right )}}{\cos{\left (\phi \right )} - 1})^2+
+    (\Delta \varepsilon \frac{\cos{\left (\frac{\varepsilon_{min}}{2} + \frac{\phi}{2} \right )}}{2 \sin{\left (\frac{\phi}{2} \right )}})^2}
+  \end{equation}
 \end{itemize}
 
 \section{Wnioski}

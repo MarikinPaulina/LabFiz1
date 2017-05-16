@@ -37,7 +37,8 @@
 \end{table}
 
 \title{Ćwiczenie 34:\\Wyznaczanie dyspersji optycznej pryzmatu metodą kąta najmniejszego odchylenia}
-
+\date{}
+\maketitle
 \section{Cel badań}
 Celem doświadczenia było wyznaczenie krzywej dyspersji danego pryzmatu prostego.
 
@@ -50,7 +51,7 @@ n(\nu) = \frac{c}{v(\nu)}
 
 W przypadku światła białego, zawierającego fale o różnych częstotliwościach, zostanie ono rozszczepione na pojedyńcze wiązki, załamujące się pod innym kątem.
 
-Wiązka światła monochromatycznego przy przechodzeniu przez pryzmat odchyla się o kąt $\varepsilon$, zawarty między pierwotnym jej biegiem a wiązką załamaną. 
+Wiązka światła monochromatycznego przy przechodzeniu przez pryzmat odchyla się o kąt $\varepsilon$, zawarty między pierwotnym jej biegiem a wiązką załamaną.
 \begin{figure} [H]
   \centering
   \includegraphics[width=0.5\textwidth]{./epsilon.png}
@@ -77,7 +78,7 @@ Aparatura pomiarowa
   \item spektrometr
 \end{itemize}
 \subsection{Kąt łamiący pryzmatu}
-Najpierw należało wyznaczyć kąt łamiący danego pryzmatu. W tym celu włączono lampę sodową i postawiono ją tak, by światło padało bezpośrednio przez kolimator spektrometru. Pryzmat ustawiono na stoliku tak, by kąt łamiący znajdował się naprzeciw kolimatora. 
+Najpierw należało wyznaczyć kąt łamiący danego pryzmatu. W tym celu włączono lampę sodową i postawiono ją tak, by światło padało bezpośrednio przez kolimator spektrometru. Pryzmat ustawiono na stoliku tak, by kąt łamiący znajdował się naprzeciw kolimatora.
 \begin{figure} [H]
   \centering
   \includegraphics[width=0.5\textwidth]{./phi.png}
@@ -101,13 +102,13 @@ Położenie kątowe punktu zerowego jest wyznaczone na końcu doświadczenia. Po
 \subsection{Pomiary właściwe}
 Nie zmieniając ustawienia stolika z pryzmatem wyznaczamy położenie kątowe wiązki zielonej. Następnie, przy niezmienianiu położenia stolika, wyłączamy lampę sodową, odstawiwamy ją, włączamy lampę neonową i podstawiamy ją tak, by światło padało przez kolimator. Wykonujemy analogicznie pomiary dla lampy neonowej dla kilku najjaśniejszych linii barw i spisujemy ich położenie kątowe.
 
-\section{Wyniki pomiarów}
-Kąt łamiący pryzmatu: $60^\circ$
+\section{Wyniki i analiza pomiarów}
+Kąt łamiący pryzmatu: $60^\circ 00'$
 \\Kąt zerowy: $45^\circ 30'$
 \subsection{Pomiary dla sodu}
 \begin{itemize}
-  \item żółty $346^\circ 50'$ dla $\lambda = 589 nm$ 
-  \item zielony $145^\circ 30'$ dla $\lambda = 568 nm$ 
+  \item żółty $346^\circ 50'$ dla $\lambda = 589 nm$
+  \item zielony $345^\circ 30'$ dla $\lambda = 568 nm$
 \end{itemize}
 \subsection{Pomiary dla neonu}
 \begin{tabular}{lrrr}
@@ -126,20 +127,19 @@ Kąt łamiący pryzmatu: $60^\circ$
 11 &         454 &          344 &          44 \\
 \end{tabular}
 
-\section{Analiza pomiarów}
-%Do wykresu dorobię jeszcze dopasowaną krzywą i zrzutuję nań pomiary z sodu i naniosę niepewności
 \begin{figure} [H]
   \includegraphics{./Punkty.png}
-  \caption{}
+  \caption{Wykres wartości wyliczonych ze wzoru 2 z dopasowaną krzywą}
   \label{}
 \end{figure}
 
 \section{Analiza niepewności}
-Za niepewność pomiaru wzięto:
+Za niepewność pomiaru wartości kątowej wzięto:
 \begin{equation}
   \Delta \alpha = \sqrt{\bigg(\frac{\Delta_k}{3}\bigg)^2+\bigg(\frac{\Delta_o}{3}\bigg)^2}
 \end{equation}
-gdzie $\Delta_k$ - podziałka kątomierza: $2'$, a $\Delta_o$ - niepewność eksperymentatora: $2'$.\\
+gdzie $\Delta_k$ - podziałka kątomierza: $2'$, a $\Delta_o$ - niepewność eksperymentatora: $2'$.
+Wyjątek stanowi kąt najmniejszego odchylenia gdzie, ze względu na martwy przedział niepewność wynosi $30'$. Niepewność długości fali oszacowano na 3nm \\
 \\Dalsze niepewności wyliczano metodą propagacji niepewności:
 \begin{itemize}
   \item Kąt łamiący pryzmatu

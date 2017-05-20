@@ -44,13 +44,31 @@
 Zbadanie aharmoniczności drgań wahadła matematycznego oraz wyznaczenie wartości przyspieszenia ziemskiego przy użyciu wahadła różnicowego.
 
 \section{Wstęp teoretyczny}
-Wahadłem matematycznym jest ciało o masie punktowej m zawieszone na cienkiej, nieważkiej lince o dłuości l poruszające się po okręgu w jednorodnym polu grawitacyjnym.
+Wahadłem matematycznym jest ciało o masie punktowej m, zawieszone na cienkiej, nieważkiej lince, poruszające się po okręgu w jednorodnym polu grawitacyjnym.
+\\
 \\
 \\
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.3\textwidth]{wahadlo.png}
+\caption{Wahadło matematyczne \\$F_w$ - siła wypadkowa działająca na ciało}
 \end{figure}
+
+Na ciało działa siła grawitacji oraz siła naciągu linki. Równanie ruchu dla takiego ciała ma postać:
+\begin{equation}
+\frac{d^2\varphi}{dt^2} + \frac{g}{l}\sin\varphi = 0
+\end{equation}
+, gdzie $\varphi$ - kąt wychylenia wahadła z pozycji równowagi, l - długość linki, g - przyspieszenie ziemskie
+\\
+\\Rozwiązaniem tego równania dla ruchu oscylującego i jednocześnie wzorem na okres drgań wahadła jest:
+\begin{equation}
+T(\varphi) = 2\pi\sqrt{\frac{l}{g}}\sum_{n=0}^{\infty}\bigg(\frac{(2n)!}{(2^nn!)^2}\bigg)^2\sin^{2n}\bigg(\frac{\varphi}{2}\bigg)
+\end{equation}
+
+W przeprowadzanym doświadczeniu kąt wychylenia jest niewielki $\varphi<<\frac{\pi}{2}$. Dla dokładnośći 3 miejsc znaczących będą brane pod uwagę jedynie sumy dla n=3. Po podstawieniu tych zależności do wzoru (2) otrzymujemy:
+\begin{equation}
+T(\varphi) = 2\pi\sqrt{\frac{l}{g}}\bigg(1+\frac{1}{4}\sin^2\frac{\varphi}{2}+\frac{9}{64}\sin^4\frac{\varphi}{2}+\frac{25}{256}\sin^6\frac{\varphi}{2}\bigg)
+\end{equation}
 
 
 \section{Opis układu i metody pomiarowej}

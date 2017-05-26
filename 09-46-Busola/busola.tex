@@ -41,7 +41,7 @@
 \maketitle{}
 
 \section{Cel badań}
-
+Taaaaaaaaa.........
 
 \section{Wstęp teoretyczny}
 
@@ -49,16 +49,61 @@
 \section{Opis układu i metody pomiarowej}
 
 
-\section{Wyniki pomiarów}
-
-
-\section{Analiza pomiarów}
-
+\section{Wyniki i analiza pomiarów}
+\subsection{Dla 1 zwoju}
+\input{./tabelka_1.tex}
+\begin{figure}[H]
+  \includegraphics{./wykres_1.eps}
+  \caption{}
+  \label{}
+\end{figure}
+a = 2.904(0.074)\\
+$H_g$ = 9.746(0.136)\\
+\subsection{Dla 3 zwoji}
+\input{./tabelka_3.tex}
+\begin{figure}[H]
+  \includegraphics{./wykres_3.eps}
+  \caption{}
+  \label{}
+\end{figure}
+a = 1.163(0.048)\\
+$H_g$ = 11.705(0.153)\\
+\subsection{Dla 5 zwoji}
+\input{./tabelka_5.tex}
+\begin{figure}[H]
+  \includegraphics{./wykres_5.eps}
+  \caption{}
+  \label{}
+\end{figure}
+a = 1.058(0.017)\\
+$H_g$ = 17.749(0.070)\\
+Paramety wszystkich prostych zostały, wraz z ich niepewnościami wyliczone przy użyciu funkcji \emph{polyfit} pakietu \emph{numpy} w Pythonie. Funkcja ta
+dopasowuje prostą przy użyciu metody najmniejszych kwadratów, przyjmując dla każdego punktu wagę $/frac{1}{\text{niepewość_y}}$
 
 \section{Analiza niepewności}
- 
-
+Za niepewność pomiaru kąta przyjęto wartość daną wzorem:
+\begin{equation}
+  \Delta \varphi = \sqrt{(\frac{\text{podziałka}}{\sqrt{3}})^2+(\frac{\text{experymentator}}{\sqrt{3}})^2}
+\end{equation}
+przujmując podziałkę co $1^\circ$, i niepewność eksperymentatora równą połowie podziałki.
+Niepewności dla pomiaru prądu:
+\begin{equation}
+  \Delta I = I*0.02+5dgt
+\end{equation}
+Dla wartości potrzebnych do wyrysowania wykresu niepewności wyliczono metodą propagacji niepewności:\\
+\begin{equation}
+  \Delta \frac{1}{I} = \Delta I * \frac{1}{I^2}
+\end{equation}
+\begin{equation}
+  \Delta \cot{\varphi} = \Delta \varphi * \frac{1}{\sin^2{\varphi}}
+\end{equation}
+Niepewność dla a uzyskano pierwiastkując zwracaną przez funkcję \emph{polyfit} kowariancję tegoż współczynnika. W celu wyznaczenia niepewności składowej pola
+magnetycznego użyto %znowu
+metody różniczki zupełnej:
+\begin{equation}
+  \Delta H_g = \Delta a * \frac{N}{2R}%Tu mogę jeszcze walnąć rozdzielczość promienia
+\end{equation}
 \section{Wnioski}
- 
+
 
 \end{document}

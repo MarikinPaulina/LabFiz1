@@ -41,16 +41,46 @@
 \author{Marta Pogorzelska \& Paulina Marikin}
 \maketitle{}
 
+\title{Ćwiczenie 46:\\Wyznaczanie wartości poziomej pola magnetycznego Ziemi metodą busoli stycznych}
+\date{}
+\maketitle{}
+
 \section{Cel badań}
-Celem doświadczenia było wyznaczenie wartości składowej poziomej natężenia pola magnetycznego Ziemi poprzez badanie zmian kąta wychylenia wektora wypadkowego pola ziemskiego i pola wytwarzanego przez zwojnicę busoli stycznych.
+Celem doświadczenia było wyznaczenie wartości składowej poziomej natężenia pola magnetycznego Ziemi poprzez badanie zmian kąta wychylenia wektora wypadkowego pola ziemskiego i pola wytwarzanego przez zwojnicę busoli stycznych z prądem stałym.
 
 \section{Wstęp teoretyczny}
-
+Ziemskie pole magnetyczne odpowiada w przybliżeniu polu dipola magnetycznego znajdującego się w środku Ziemi. O właściwościach magnetycznych naszej planety decyduje będące w ciągłym ruchu płynne, przewodzące jądro Ziemi. Bieguny magnetyczne leżą przeciwstawnie do biegunów geograficznych, a ich położenie względem biegunów geograficznych trochę się różni. Linia łącząca bieguny magnetyczne tworzy wraz z osią obrotu Ziemi kąt (na stan obecny) $11,5^\circ$.  Obszar, w którym występuje ziemskie pole magnetyczne nazywany jest ziemską magnetosferą i rozciąga się do kilkudziesięciu kilometrów nad powierzchnią Ziemi.
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.3\textwidth]{./ziemia.jpg}
+  \caption{Rozkład linii pola magnetycznego Ziemi oraz położenie biegunów magnetycznych i geograficznych.}
+  \label{}
+\end{figure}.
+\\W dowolnym punkcie przestrzeni pole magnetyczne opisane jest wektorem natężenia $\vec{H}$ tego pola. Jednostką natężenia jest Tesla [T]. Wektor natężenia można rozłożyć na 2 składowe: poziomą $\vec{H_g}$ i pionową. Przy użyciu igły magnetycznej i obwodu kołowego można wyznaczyć kierunek oraz wartość składowej poziomej. Na umieszczoną w polu magnetycznym igłę działa moment siły $\vec{M}$, który ustawia ją równolegle do wektora $\vec{H}$. Jeśli umieścimy igłę w płaszczyżnie poziomej, to w wyniku tego w przeprowadzanym doświadczeniu można brać pod uwagę tylko składową poziomą. Jeśli następnie w obwodzie zostanie puszczony prąd o natężeniu I, wytworzyone zostanie nowe pole magnetyczne o natężeniu $\vec{H_o}$:
+\begin{equation}
+H_0 = \frac{NI}{2R}
+\end{equation}
+,gdzie N - liczba zwojów w obwodzie, R - promień zwojnicy.
+\\
+\\W celu wyznaczenia wartości $H_g$ w doświadczeniu zostanie użyta busola stycznych. Jest to urządzenie do pomiaru natężeń stałych pól magnetycznych. Prąd stały o natężeniu I, płynący w zwojnicy, wytwarza pole magnetyczne, które nakłada się na składową poziomą pola magnetycznego Ziemi $\vec{H_g}$. Wektor wypadkowy $\vec{H_w}$ obu natężeń jest sumą geometryczną pola $\vec{H_g}$ i pola zwojnicy $\vec{H_o}$. Namagnesowana igła umieszczona w takim polu wychyli się o pewien kąt $\varphi$ i ustawi w kierunku zgodnym z kierunkiem wektora $\vec{H_w}$. Między natężeniami zachodzi zależność:
+\begin{equation}
+ctg\varphi = \frac{H_g}{H_o}
+\end{equation}
+,a po podstawieniu do wzoru (1):
+\begin{equation}
+H_g = \frac{NIctg\varphi}{2R}
+\end{equation}
 
 \section{Opis układu i metody pomiarowej}
+\begin{figure}[H]
+\centering
+  \includegraphics{./busola.png}
+  \caption{Schemat busoli stycznych oraz wektory składowej poziomej natężenia ziemskiego $H_g$ i natężenia obwodu $H_o$.}
+  \label{}
+\end{figure}
 Najpierw należało uruchomić komputer i podłączyć zasilacz do amperomierza i busoli stycznych, w taki sposób aby liczba zwojów cewki busoli wynosiła 1. Następnie włączono specjalny program na komputerze, który pokazywał obraz z kamery umieszczonej bezpośrednio nad igłą magnetyczną. Wpierw poczekano aż igła będzie w stanie równowagi i ustawiono busolę tak, by linia $0^\circ$ na kątomierzu pokrywała się z kierunkiem igły. Po ustabilizowaniu układu minimalnie podwyższono natężenie prądu w zasilaczu tak, by igła wychyliła się o pewien kąt $\varphi$. Odczytano i spisano kąt odchylenia do protokołu. Wykonano 12 pomiarów kątów wychyleń z przedziału od $0^\circ - 90^\circ$dla coraz to wyższych wartości prądu. Doświadczenie przeprowadzono analogicznie również dla 3 i 5 zwojów na cewce. W tym celu przełączono kabel między zasilaczem a cewką tak, by zwiększyć liczbę zwojów. 
-
-Użyte przyrządy i materiały:
+\\
+\\Użyte przyrządy i materiały:
 \begin{itemize}
   \item busola stycznych:
     \begin{itemize}
@@ -64,34 +94,33 @@ Użyte przyrządy i materiały:
   \item zasilacz prądu stałego
   \item kable
 \end{itemize}
-
 \section{Wyniki i analiza pomiarów}
-\subsection{Dla 1 zwoju}
+\subsection{Dla N = 1}
 \input{./tabelka_1.tex}
 \begin{figure}[H]
   \includegraphics{./wykres_1.eps}
   \caption{}
   \label{}
-\end{figure}
-a = 2.904(0.074)\\
+\end{figure}.
+\\a = 2.904(0.074)\\
 $H_g$ = 9.746(0.136)\\
-\subsection{Dla 3 zwoji}
+\subsection{Dla N = 3}
 \input{./tabelka_3.tex}
 \begin{figure}[H]
   \includegraphics{./wykres_3.eps}
   \caption{}
   \label{}
-\end{figure}
-a = 1.163(0.048)\\
+\end{figure}.
+\\a = 1.163(0.048)\\
 $H_g$ = 11.705(0.153)\\
-\subsection{Dla 5 zwoji}
+\subsection{Dla N = 5}
 \input{./tabelka_5.tex}
 \begin{figure}[H]
   \includegraphics{./wykres_5.eps}
   \caption{}
   \label{}
-\end{figure}
-a = 1.058(0.017)\\
+\end{figure}.
+\\a = 1.058(0.017)\\
 $H_g$ = 17.749(0.070)\\
 Paramety wszystkich prostych zostały, wraz z ich niepewnościami wyliczone przy użyciu funkcji \emph{polyfit} pakietu \emph{numpy} w Pythonie. Funkcja ta
 dopasowuje prostą przy użyciu metody najmniejszych kwadratów, przyjmując dla każdego punktu wagę $\frac{1}{\text{dy}}$

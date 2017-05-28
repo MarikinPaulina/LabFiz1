@@ -156,16 +156,15 @@ przujmując podziałkę co $5^\circ$, i niepewność eksperymentatora równą po
 \begin{equation}
   \Delta I = I*0.02+5dgt
 \end{equation}
-Dla wartości potrzebnych do wyrysowania wykresu niepewności wyliczono metodą propagacji niepewności:\\
+Dla wartości potrzebnych do wyrysowania wykresów niepewności wyliczono metodą propagacji niepewności:\\
 \begin{equation}
   \Delta \frac{1}{I} = \Delta I * \frac{1}{I^2}
 \end{equation}
 \begin{equation}
   \Delta \cot{\varphi} = \Delta \varphi * \frac{1}{\sin^2{\varphi}}
 \end{equation}
-Niepewność dla a uzyskano pierwiastkując zwracaną przez funkcję \emph{polyfit} kowariancję tegoż współczynnika. W celu wyznaczenia niepewności składowej pola
-magnetycznego użyto %znowu
-metody różniczki zupełnej:
+Niepewność dla a uzyskano pierwiastkując zwracaną przez funkcję \emph{polyfit} kowariancję tegoż współczynnika. W celu wyznaczenia niepewności składowej pola magnetycznego użyto %znowu 
+metody propagacji niepewności:
 \begin{equation}
   \Delta H_g = \Delta a * \frac{N}{2R}%Tu mogę jeszcze walnąć rozdzielczość promienia
 \end{equation}

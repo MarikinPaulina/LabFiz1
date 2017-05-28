@@ -13,8 +13,9 @@
 \usepackage{epstopdf}
 \usepackage{multirow}
 \usepackage{subfig}
+\usepackage{booktabs}
 \usepackage[europeanresistors,americaninductors]{circuitikz}
-\usetikzlibrary{patterns}
+\usetikzlibrary{patterns}	
 \newcommand{\withtodo}{0}
 
 \def\arraystretch{1.2}
@@ -148,7 +149,29 @@ Na wykresie 1 wartości napięcia utrzymują mniej-więcej(w zakresie błędów 
 - wynikający z maksymalnego namagnesowania rdzenia)i temperatur powyżej 201$^\circ$C (18mV). 
 Prosta dopasowana do pomiarów z najwyższym spadkiem leży najpierw
 poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którąz w związku z tym możemy uznać za temperature Curie.
-
+\begin{figure}
+\begin{tabular}{lrrrrrr}
+\toprule
+{} &  T[$^\circ $C] &  $\Delta T [^\circ C]$ &  $\frac{1}{U}[\frac{1}{mV}]$ &  $\Delta \frac{1}{U}[\frac{1}{mV}]$ &  $\frac{1}{U-U_{min}}[\frac{1}{mV}]$ &  $\Delta \frac{1}{U-U_{min}}[\frac{1}{mV}]$ \\
+\midrule
+17 &            170 &                  5.850 &                          221 &                           1.702e-04 &                                0.005 &                                   2.018e-04 \\
+18 &            173 &                  5.865 &                          183 &                           2.313e-04 &                                0.006 &                                   2.845e-04 \\
+19 &            176 &                  5.880 &                          146 &                           3.373e-04 &                                0.008 &                                   4.388e-04 \\
+20 &            179 &                  5.895 &                          111 &                           5.409e-04 &                                0.011 &                                   7.706e-04 \\
+21 &            183 &                  5.915 &                           78 &                           1.014e-03 &                                0.017 &                                   1.714e-03 \\
+22 &            186 &                  5.930 &                           57 &                           1.802e-03 &                                0.026 &                                   3.849e-03 \\
+23 &            189 &                  5.945 &                           42 &                           3.192e-03 &                                0.042 &                                   9.774e-03 \\
+24 &            192 &                  5.960 &                           34 &                           4.766e-03 &                                0.062 &                                   2.152e-02 \\
+25 &            195 &                  5.975 &                           29 &                           6.463e-03 &                                0.091 &                                   4.492e-02 \\
+26 &            198 &                  5.990 &                           25 &                           8.600e-03 &                                0.143 &                                   1.097e-01 \\
+27 &            201 &                  6.005 &                           22 &                           1.101e-02 &                                0.250 &                                   3.331e-01 \\
+28 &            203 &                  6.015 &                           21 &                           1.205e-02 &                                0.333 &                                   5.906e-01 \\
+29 &            206 &                  6.030 &                           20 &                           1.325e-02 &                                0.500 &                                   1.325e+00 \\
+30 &            208 &                  6.040 &                           19 &                           1.464e-02 &                                1.000 &                                   5.285e+00 \\
+31 &            211 &                  6.055 &                           18 &                           1.627e-02 &                                  inf &                                         inf \\
+\bottomrule
+\end{tabular}
+\end{figure}
 \begin{figure}[H]
   \includegraphics{./Curie_odwrotnosc.png}
   \caption{Wykres zależności $\frac{1}{U}$(T) dla fazy paramagnetyka}

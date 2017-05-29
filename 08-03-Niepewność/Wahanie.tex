@@ -178,8 +178,8 @@ Niepewność pomiarów to:
 	\item czas $\Delta T = 0.001 s$
 	\item kąt $\Delta \varphi = 2 ^\circ$
 \end{itemize}
-Dla wszystkich okresów przy wyliczaniu niepewności wzięto pod uwagę także ich odchylenie standardowe. 
-$$\mu(T) = \sqrt{std^2 + \frac{\Delta T^2}{3}}$$
+Dla wszystkich okresów przy wyliczaniu niepewności użyto metody propagacji niepewności:
+$$\mu(T) = \sqrt{\bigg(\frac{\pi}{\sqrt{gl}}f(\varphi)\Delta l \bigg)^2 + \bigg(2\pi\sqrt{\frac{l}{g}}\frac{df(\varphi)}{d\varphi}\Delta \varphi \bigg)^2}$$
 Zarówno dla długości jak i dla kąta do niepewności doliczono niepewność eksperymentatora równa połowie niepewności pomiaru
 $$\mu(x) = \sqrt{\frac{\Delta x^2}{3}+\frac{(\frac{\Delta x}{2})^2}{3}}$$
 Niepewność dopasowanej prostej stanowi pierwiastek kowariancji zwracanej przez funkcję \emph{polyfit} pakietu \emph{numpy} w Pytonie. Dla g niepewność wyliczono metodą propagacji niepewności:

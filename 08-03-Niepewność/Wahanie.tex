@@ -183,7 +183,7 @@ $$\mu(T) = \sqrt{std^2 + \frac{\Delta T^2}{3}}$$
 Zarówno dla długości jak i dla kąta do niepewności doliczono niepewność eksperymentatora równa połowie niepewności pomiaru
 $$\mu(x) = \sqrt{\frac{\Delta x^2}{3}+\frac{(\frac{\Delta x}{2})^2}{3}}$$
 Niepewność dopasowanej prostej stanowi pierwiastek kowariancji zwracanej przez funkcję \emph{polyfit} pakietu \emph{numpy} w Pytonie. Dla g niepewność wyliczono metodą propagacji niepewności:
-$$\mu(g) = \sqrt{\bigg(\Delta a \frac{4 \pi^2 f^2(\varphi)}{a^2}\bigg)^2+\bigg(\Delta f(\varphi) \frac{8 \pi^2 f(\varphi)}{a}\bigg)^2}$$
+$$\mu(g) = \sqrt{\bigg(\Delta a \frac{4 \pi^2 f^2(\varphi)}{a^2}\bigg)^2+\bigg(\Delta\varphi f'(\varphi)f(\varphi) \frac{8 \pi^2 f(\varphi)}{a}\bigg)^2}$$
 \section{Wnioski}
 Wykonane doświadczenie skłania ku potwierdzeniu tezy o zależności okresu drgań wahadła matematycznego od kąta jego wychylenia. Wysoka (w zakresie jednego przedziału niepewości) zgodność większości punktów pomiarowych do krzywej teoretycznej daje podstawy do stwierdzenia, iż badna teoria poprawnie opisuje daną zależność. Pomiar dla $10^\circ$ wydaje się być niepoprawny ze względu na dużą, w porównaniu z innymi, niepewność, tak więc jego odchylenie od krzywej może, ale nie musi wskazywać na niepoprawność tezy. Ilość punktów pomiarowych w tej częśc ćwiczenia była jednak nieduża i w celu dalszych rozważań oraz bardziej dokładnego sprawdzenia poprawności tezy należałoby wykonać pomiary dla większej ilości kątów wychyleń.\\
 \\

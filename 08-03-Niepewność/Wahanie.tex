@@ -162,15 +162,20 @@ $T^2[s^2]$ &  1.4708(0.0046) & 1.8774(0.0022)  & 2.2858(0.0025)  & 2.6908(0.0021
     \caption{}
     \label{}
 \end{figure}
-Pomiary zostały opracowane zgodnie ze wzorem (7), od każdego pomiaru długości (i kwadratu odpowiadającego mu pomiaru okresu) odjęto wszystkie pomiary odeń mniejsze. Otrzymane różnice przedstawiono na wykresie wraz z dopasowaną do nich prostą. Prosta zostałą dopasowana funkcją \emph{polyfit} pakietu \emph{numpy} 
-w Pythonie.\\
-$a = 0.0402878(0.0000015)$
+Pomiary zostały opracowane zgodnie ze wzorem (7), od każdego pomiaru długości (i kwadratu odpowiadającego mu pomiaru okresu) odjęto wszystkie pomiary odeń mniejsze. Otrzymane różnice przedstawiono na wykresie wraz z dopasowaną do nich prostą. Prosta zostałą dopasowana funkcją \emph{polyfit} pakietu \emph{numpy} w Pythonie.\\
+\\$a = 0.0402878(0.0000015)$
 \\ 
-Parametr kierunkowy dopasowanej prostej został przyrównany do pozostałej części zależności (7):
+\\Parametr kierunkowy dopasowanej prostej został przyrównany do pozostałej części zależności (7):
 \begin{equation}
-a = \frac{4 \pi^2}{g} f(\varphi)
+a = \frac{4 \pi^2}{g} f^2(\varphi)
 \end{equation}
-gdzie a - parametr kierunkowy. Przekształcenie powyższej równości pozwoliło na wyliczenie przyspieszenia ziemskiego, którego wyliczona wartość wynosi g = 9.841(0.299)[$\frac{m}{s^2}$]
+gdzie a - parametr kierunkowy. Przekształcenie powyższej równości daje:
+\begin{equation}
+g = \frac{4 \pi^2}{a} f^2(\varphi)
+\end{equation}
+Pozwala to na wyznaczenie przyspieszenia ziemskiego, którego wyliczona wartość wraz z niepewnością wynosi:
+\\
+\\g = 9.841(0.299)[$\frac{m}{s^2}$]
 \section{Analiza niepewności}
 Niepewność pomiarów to:
 \begin{itemize}

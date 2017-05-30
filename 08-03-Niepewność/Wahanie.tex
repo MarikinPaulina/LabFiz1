@@ -1,6 +1,5 @@
 \documentclass[a4paper,10pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage[showframe=true]{geometry}
+\usepackage[margin=1in]{geometry} % showframe=true potrzebne tylko wtedy gdy chcemy patrzeć na obramowanie
 \usepackage{changepage}
 \usepackage{polski}
 \usepackage[utf8x]{inputenc}
@@ -100,9 +99,9 @@ Aparatura pomiarowa
   \item elektroniczny układ pomiarowy z automatycznym pomiarem okresu
   \item linijka
 \end{itemize}
- 
+
 \subsection{Badanie zależności okresu drgań wahadła od kąta wychylenia}
-Najpierw wykonano pomiar długości linki przy użyciu linijki od środka masy kulki do punktu zaczepienia  i włączono stoper, który nastawiono na  pomiar 3 okresów. 
+Najpierw wykonano pomiar długości linki przy użyciu linijki od środka masy kulki do punktu zaczepienia  i włączono stoper, który nastawiono na  pomiar 3 okresów.
 \begin{equation}
 T_{sr} = \frac{t}{n}
 \end{equation}
@@ -149,7 +148,7 @@ t[s] &  1.2158(0.0001) &  1.3703(0.0001) &  1.5107(0.0001) &  1.6406(0.0001) &  
  &  1.2121(0.0001)&1.3703(0.0001)&1.5124(0.0001)&  1.6402(0.0001) &  1.7597(0.0001) &  1.8516(0.0001) \\
  &  1.2126(0.0001)&1.3706(0.0001)&1.5124(0.0001)&  1.6408(0.0001) &  1.7599(0.0001) &  1.8518(0.0001) \\
  &  1.2136(0.0001)&1.3704(0.0001)&1.5120(0.0001)&  1.6400(0.0001) &  1.7605(0.0001) &  1.8523(0.0001) \\\hline
-T[s] &  1.2127(0.0019) & 1.37018(0.00082)  & 1.51190(0.00085)  & 1.64036(0.00064)  & 1.75986(0.00087)  
+T[s] &  1.2127(0.0019) & 1.37018(0.00082)  & 1.51190(0.00085)  & 1.64036(0.00064)  & 1.75986(0.00087)
 & 1.85193(0.00068) & \\\hline
 $T^2[s^2]$ &  1.4708(0.0046) & 1.8774(0.0022)  & 2.2858(0.0025)  & 2.6908(0.0021)  & 3.0971(0.0030)  & 3.4296(0.0025) & \\
 \bottomrule
@@ -164,7 +163,7 @@ $T^2[s^2]$ &  1.4708(0.0046) & 1.8774(0.0022)  & 2.2858(0.0025)  & 2.6908(0.0021
 \end{figure}
 Pomiary zostały opracowane zgodnie ze wzorem (7), od każdego pomiaru długości (i kwadratu odpowiadającego mu pomiaru okresu) odjęto wszystkie pomiary odeń mniejsze. Otrzymane różnice przedstawiono na wykresie wraz z dopasowaną do nich prostą. Prosta zostałą dopasowana funkcją \emph{polyfit} pakietu \emph{numpy} w Pythonie.\\
 \\$a = 0.0402878(0.0000015)$
-\\ 
+\\
 \\Parametr kierunkowy dopasowanej prostej został przyrównany do pozostałej części zależności (7):
 \begin{equation}
 a = \frac{4 \pi^2}{g} f^2(\varphi)

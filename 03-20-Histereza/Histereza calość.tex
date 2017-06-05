@@ -50,15 +50,21 @@ ferromagnetyki, paramagnetyki, diamagnetyki, anty-ferromagnetyki oraz ferrimagne
 \vec{M} =\frac{1}{V} \sum_{i=1}^n \vec{\mu_i}
 \end{equation}
 ,gdzie V – objętość, $\vec{\mu_i}$ - elementarny moment magnetyczny.
-\\%W tym akapicie 2 wykresy teoretyczne
-\\Zarówno ferromagnetyki i paramagnetyki posiadają niezerowy moment magnetyczny, ale  tylko ferromagnetyki charakteryzują się istnieniem wewnętrznego pola magnetycznego porządkującego spiny, co objawia się niezerowym namagnesowaniem jego próbek. Podczas gdy spiny paramagnetyków niezależnie od temperatur pozostają nieuporządkowane, a ich kierunki są całkowicie przypadkowe. Wraz ze wzrostem temperatury ferrromagnetyka, wzrastają chaotyczne fluktuacje spinów. Temperatura, w której fluktuacje całkowicie niszczą wewnętrzne domeny magnetyczne, zaś ferromagnetyk przechodzi do fazy paramagnetycznej, jest nazywana temperaturą Curie. Jest to przejście fazowe drugiego rodzaju.
-\paragraph{Wykresy teoretyczne magnetyzacji ferromagnetyka}
+\\
+\\Zarówno ferromagnetyki i paramagnetyki posiadają niezerowy moment magnetyczny, ale  tylko ferromagnetyki
+charakteryzują się istnieniem wewnętrznego pola magnetycznego porządkującego spiny, co objawia się niezerowym namagnesowaniem jego próbek.
+Podczas gdy spiny paramagnetyków niezależnie od temperatur pozostają nieuporządkowane, a ich kierunki są całkowicie przypadkowe. Wraz ze wzrostem
+temperatury ferrromagnetyka, wzrastają chaotyczne fluktuacje spinów. Temperatura, w której fluktuacje całkowicie niszczą wewnętrzne domeny magnetyczne,
+zaś ferromagnetyk przechodzi do fazy paramagnetycznej, jest nazywana temperaturą Curie. Jest to przejście fazowe drugiego rodzaju.\\\\
+\\
+Wykresy teoretyczne magnetyzacji ferromagnetyka\\
+\\
 \begin{figure}[H]
-		\includegraphics[width=0.4\textwidth]{wykres1.png}
+		\includegraphics[width=0.5\textwidth]{wykres1.png}
 		\caption{przy braku pola zewnętrznego}
 \end{figure}
 \begin{figure}[H]
-		\includegraphics[width=0.4\textwidth]{wykres2.png}
+		\includegraphics[width=0.5\textwidth]{wykres2.png}
 		\caption{w niezerowym zewnętrznym polu magnetycznym}
 \end{figure}
 W celu uporządkowania układu momentów magnetycznych ferromagnetyka w fazie paramagnetycznej można przyłożyć wystarczająco silne zewnętrzne pole magnetyczne albo obniżyć temperaturę danej próbki. Skutkuje to ponownym powstaniem coraz większych, wraz ze zmniejszeniem temperatury, domen magnetycznych.
@@ -68,7 +74,6 @@ W celu uporządkowania układu momentów magnetycznych ferromagnetyka w fazie pa
 \chi = \frac{M}{H}
 \end{equation}
 ,gdzie H - natężenie pola magnetycznego.
-\end{equation}
 \\
 \\Prawo Curie-Weissa, opisujące zachowanie ferromagnetyków w $T > \theta$,mówi:
 \begin{equation}
@@ -93,7 +98,7 @@ Doświadczenie polegało na wyznaczeniu temperatury Curie dla ferromagnetycznego
 \includegraphics[width=0.4\textwidth]{uklad.png}
 \end{figure}
 Na przedstawiony powyżej układ użyty w doświadczeniu składa się: źródło prądu zmiennego, uzwojenie pierwotne transformatora $n_p$, uzwojenie wtórne transformatora $n_w$, ferromagnetyczny rdzeń, termometr elektroniczny podłączony do próbki, woltomierz cyfrowy oraz grzałka. Całość układu podłączona jest do komputera ze specjalnym oprogramowaniem, dzięki któremu można zmieniać moc grzałki oraz który archiwizuje otrzymane wyniki i nanosi je na wykres zależności napięcia od temperatury.
-
+\\\\\\\\\\\\\\
 \section{Wyniki i analiza pomiarów}
 \subsection{Wyznaczanie temperatury Curie}
 Tabela danych pomiarowych wraz z niepewnościami.
@@ -143,7 +148,7 @@ W celu wyznaczenia temperatury Curie powyższe pomiary zostały przedstawione na
   \caption{Wykres zależności $U(T)$ z prostymi dla maksymalnego i minimalnego napięcia oraz prostą dopasowaną do najostrzejszej części wykresu}
 \end{figure}.
 %Nie wiem czy coś jeszcze dopisać, chyba jest git
-\\Na wykresie (1) wartości napięcia utrzymują mniej-więcej(w zakresie błędów pomiarowych) stały poziom dla temperatur poniżej 128$^\circ$C (452mV - wynikający z maksymalnego namagnesowania rdzenia) i temperatur powyżej 201$^\circ$C (18mV). Prosta dopasowana do pomiarów z najwyższym spadkiem leży najpierw poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którą w związku z tym możemy uznać za temperature Curie. Jakościowy kształt wykresu czyli stały-łagodny_spadek-szybki_spadek-łagodny_spadek-stały odpowiada teoretycznemu rysunkowi (2) i tym samym nie daje podstaw do odrzucenia teorii.
+\\Na wykresie (1) wartości napięcia utrzymują mniej-więcej(w zakresie błędów pomiarowych) stały poziom dla temperatur poniżej 128$^\circ$C (452mV - wynikający z maksymalnego namagnesowania rdzenia) i temperatur powyżej 201$^\circ$C (18mV). Prosta dopasowana do pomiarów z najwyższym spadkiem leży najpierw poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którą w związku z tym możemy uznać za temperature Curie. Jakościowy kształt wykresu czyli \emph{stały-łagodny spadek(wypukły)-szybki spadek-łagodny spadek(wklęsły)-stały} odpowiada teoretycznemu rysunkowi (2) i tym samym nie daje podstaw do odrzucenia teorii.
 \subsection{Wyznaczanie temperatury Curie-Weissa}
 Wcelu sprawdzenia prawdziwości prawa Curie-Weissa oraz wyznaczenia temperatury $\theta$, pomiary przekształcono w sposób zaprezentowany w poniższej tabeli oraz przedstawiono na wykresach, które, zgodnie z prawem Curie-Weisa, powinny przedstawiać zależność liniową.
 \begin{figure}
@@ -181,7 +186,7 @@ Niepewności przekształconych wartości zostały wyliczone z metody propagacji 
   \includegraphics{./Curie_odjete.eps}
   \caption{Wykres zależności $\frac{1}{U-U_{min}}$(T) dla fazy paramagnetyka}
 \end{figure}
-\\Wykres (4), zgodnie z założeniami, przedstawia zależność liniową. Wraz ze spadkiem napięcia rosną jego niepewności, a co za tym idzie kolejne punkty pomiarowe są coraz bardziej wątpliwe. W końcowej części wykresu powinno następować wypłaszczenie (całkowite wzbudzenie przez uzwojenie wtórne), jednak jest ono niewidoczne. Może to być spowodowane sporymi niepewnościami w tym obszarze lub wciąż zbyt niskimi temperaturami. Dla dopasowanej prostej widać przesunięcie $\theta$ względem $T_C$ o około $5^\circ$. Do wykresu (4) dopasowano prostą przy użyciu funkcji \emph{polyfit}, biblioteki \emph{numpy} w Pytonie, z użyciem wag $\frac{1}{dy}$. Dla wykresu (5) $U_{min}$ zostało oszacowane jako najmniejsza zmierzona wartość niapięcia. Jednak wykres ten, ze względu na szybko rosnące różnice i ogromne niepewności, jest nieczytelny i nie został poddany analizie. 
+\\Wykres (4), zgodnie z założeniami, przedstawia zależność liniową. Wraz ze spadkiem napięcia rosną jego niepewności, a co za tym idzie kolejne punkty pomiarowe są coraz bardziej wątpliwe. W końcowej części wykresu powinno następować wypłaszczenie (całkowite wzbudzenie przez uzwojenie wtórne), jednak jest ono niewidoczne. Może to być spowodowane sporymi niepewnościami w tym obszarze lub wciąż zbyt niskimi temperaturami. Dla dopasowanej prostej widać przesunięcie $\theta$ względem $T_C$ o około $5^\circ$. Do wykresu (4) dopasowano prostą przy użyciu funkcji \emph{polyfit}, biblioteki \emph{numpy} w Pytonie, z użyciem wag $\frac{1}{dy}$. Dla wykresu (5) $U_{min}$ zostało oszacowane jako najmniejsza zmierzona wartość niapięcia. Jednak wykres ten, ze względu na szybko rosnące różnice i ogromne niepewności, jest nieczytelny i nie został poddany analizie.
 \\
 \section{Analiza niepewności}
 Niepewności pomiarów temperatury została wyliczona jako iloczyn danego pomiaru i klasy urządzenia pomiarowego(0.005) + 5$^\circ$C

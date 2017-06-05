@@ -15,7 +15,7 @@
 \usepackage{subfig}
 \usepackage{booktabs}
 \usepackage[europeanresistors,americaninductors]{circuitikz}
-\usetikzlibrary{patterns}	
+\usetikzlibrary{patterns}
 \newcommand{\withtodo}{0}
 
 \def\arraystretch{1.2}
@@ -40,57 +40,65 @@
 \maketitle{}
 
 \section{Cel badań}
-\paragraph{Zapoznanie się z właściwościami magnetycznymi ciał stałych oraz wyznaczenie temperatury Curie dla rdzenia ferromagnetycznego w transformatorze.}...
+Zapoznanie się z właściwościami magnetycznymi ciał stałych oraz wyznaczenie temperatury Curie dla rdzenia ferromagnetycznego w transformatorze.
 
 \section{Wstęp teoretyczny}
-\paragraph{Magnetyzm jest to zjawisko i właściwości fizyczne materii związane z oddziaływaniem ciał poprzez pole magnetyczne. Jego źródłem mogą być naładowane ciała, np.: magnes, pojedyncze cząsteczki lub przewodniki z prądem. Ze względu na sposób oddziaływania danego ciała na zewnętrzne pole magnetyczne można podzielić je na: ferromagnetyki, paramagnetyki, diamagnetyki, anty-ferromagnetyki oraz ferrimagnetyki. Jednostką opisującą stopień w jakim dane ciało wykazuje zdolności magnetyczne jest magnetyzacja lub namagnesowanie - $\vec{M}$. Wyraża się ona wzorem:}
-
+Magnetyzm jest to zjawisko i właściwości fizyczne materii związane z oddziaływaniem ciał poprzez pole magnetyczne. Jego źródłem mogą być naładowane ciała, np.:
+magnes, pojedyncze cząsteczki lub przewodniki z prądem. Ze względu na sposób oddziaływania danego ciała na zewnętrzne pole magnetyczne można podzielić je na:
+ferromagnetyki, paramagnetyki, diamagnetyki, anty-ferromagnetyki oraz ferrimagnetyki. Jednostką opisującą stopień w jakim dane ciało wykazuje zdolności magnetyczne
+jest magnetyzacja lub namagnesowanie - $\vec{M}$. Wyraża się ona wzorem:
 \begin{equation}
 \vec{M} =\frac{1}{V} \sum_{i=1}^n \vec{\mu_i}
 \end{equation}
-\paragraph{gdzie V – objętość, $\vec{\mu_i}$ - elementarny moment magnetyczny.}
-
-\paragraph{Zarówno ferromagnetyki i paramagnetyki posiadają niezerowy moment magnetyczny, ale  tylko ferromagnetyki charakteryzują się istnieniem wewnętrznego pola magnetycznego porządkującego spiny, co objawia się niezerowym namagnesowaniem jego próbek. Podczas gdy spiny paramagnetyków na skutek wyższych temperatur pozostają nieuporządkowane a ich kierunki są całkowicie przypadkowe. W celu uporządkowania układu momentów magnetycznych paramagnetyka można przyłożyć wystarczająco silne zewnętrzne pole magnetyczne albo obniżyć temperaturę danej próbki. Skutkuje to przejściem ciała do fazy ferromagnetycznej. Temperaturą krytyczną przejścia z jednej fazy do drugiej jest tzw. temperatura Curie. W odpowiednio wysokiej temperaturze zarówno uporządkowanie układu jak i namagnesowanie ferromagnetycznej próbki ulegają zanikaniu i następuje przejście do fazy paramagnetycznej zwanym przejściem fazowym drugiego rodzaju.}
-
-\paragraph{Jak wspomniano wyżej, jednym ze sposobów na uporządkowanie układu spinów w paramagnetyku jest przyłożenie zewnętrznego pola magnetycznego. Wielkością charakteryzującą jego reakcję na takie pole jest podatność magnetyczna i wyraża się ona wzorem:}
-
+,gdzie V – objętość, $\vec{\mu_i}$ - elementarny moment magnetyczny.
+\\%W tym akapicie 2 wykresy teoretyczne
+\\Zarówno ferromagnetyki i paramagnetyki posiadają niezerowy moment magnetyczny, ale  tylko ferromagnetyki charakteryzują się istnieniem wewnętrznego pola
+magnetycznego porządkującego spiny, co objawia się niezerowym namagnesowaniem jego próbek. Podczas gdy spiny paramagnetyków niezależnie od temperatur pozostają
+nieuporządkowane a ich kierunki są całkowicie przypadkowe. Wraz ze wzrostem temperatury ferrromagnetyka, wzrastają chaotyczne fluktuacje spinów. Temperatura w której fluktuacje całkowicie niszczą wewnętrzne domeny magnetyczne, zaś ferromagnetyk przechodzi do fazy paramagnetycznej jest nazywana temperaturą Curie. Jest to zwane przejściem fazowym drugiego rodzaju.W celu uporządkowania układu momentów magnetycznych ferromagnetyka w fazie paramagnetycznej można
+przyłożyć wystarczająco silne zewnętrzne pole magnetyczne albo obniżyć temperaturę danej próbki. Skutkuje to ponownym powstaniem coraz większych wraz ze zmniejszeniem temperatury domen magnetycznych.
+\\
+\\Jak wspomniano wyżej, jednym ze sposobów na uporządkowanie układu spinów jest przyłożenie zewnętrznego pola magnetycznego. Wielkością charakteryzującą jego reakcję
+na takie pole jest podatność magnetyczna i wyraża się ona wzorem:
 \begin{equation}
 \chi = \frac{M}{H}
 \end{equation}
-
-\paragraph{,gdzie H - natężenie pola magnetycznego}
-
-\paragraph{zaś z prawa Curie-Weissa wiemy że:}
-
+,gdzie H - natężenie pola magnetycznego. W danym doświadczeniu podatność jest badana pośrednio przez napięcie wtórne, zależne od niej liniowo:
+\begin{equation}
+U = U_0 + AM(T)
+\end{equation}
+gdzie A to dowolna stała.
+\\
+\\Z prawa Curie-Weissa wiemy że:
 \begin{equation}
 \chi = \frac{C}{T - \theta}
 \end{equation}
-
-\paragraph{gdzie C - stała Curie-Weissa, T - temperatura próbki, $\theta$ - temperatura Curie-Weissa.}
-
-\paragraph{Opisana powyżej podatność jest proporcjonalna do napięcia wtórnego na transformatorze, które będzie mierzone w tym doświadczeniu i indukcyjności opisanej przez zależność:}
-
+,gdzie C - stała Curie-Weissa, T - temperatura próbki, $\theta$ - temperatura Curie-Weissa.
+\\
+\\Opisana powyżej podatność jest proporcjonalna do napięcia wtórnego na transformatorze, które będzie mierzone w tym doświadczeniu i indukcyjności opisanej przez zależność:
 \begin{equation}
 B = \mu_0 H + \mu_0 M(T)
 \end{equation}
-
-W celu wyznaczenia $T_c$ przekształcamy wzór (3) i otrzymujemy:
-
+W celu wyznaczenia $\theta$ przekształcamy wzór (3) i otrzymujemy:
 \begin{equation}
 \frac{1}{\chi} = \frac{1}{C} T - \frac{\theta}{C}
 \end{equation}
-
-\paragraph{Przedstawiona zależność odwrotności podatności od temperatury jest zależnością liniową.}
+Przedstawiona zależność odwrotności podatności od temperatury jest zależnością liniową.
 
 \section{Opis układu i metody pomiarowej}
-Doświadczenie polegało na wyznaczeniu, za pomocą serii pomiarów napięcia na uzwojeniu wtórnym transformatora w zależności od temperatury, temperatury Curie dla ferromagnetycznego rdzenia tego transformatora. Po włączeniu komputera i specjalnego programu należało rozgrzać grzałkę najpierw do 20\% jej mocy i odnotować kilka pomiarów napięcia dla danej temperatury. Następnie ustawiono moc grzałki na 70\%, odnotowano kilka pomiarów dla nowej temperatury, a następnie pozostawiono układ na ok 1,5 godziny w celu osiągnięcia przez grzałkę oczekiwanej temperatury. Po upływie czasu dokonywano pomiarów co minutę, za każdym razem podwyższając moc grzałki o 1\% i powtarzając czynność aż moc wyniesie 100\%. Na koniec obniżono moc grzałki w celu wychłodzenia układu i po odczekaniu chwili wyłączono komputer oraz odłączono układ od prądu.
+Doświadczenie polegało na wyznaczeniu, za pomocą serii pomiarów napięcia na uzwojeniu wtórnym transformatora w zależności od temperatury, temperatury Curie dla
+ferromagnetycznego rdzenia tego transformatora. Po włączeniu komputera i specjalnego programu należało rozgrzać grzałkę najpierw do 20\% jej mocy i odnotować
+kilka pomiarów napięcia dla danej temperatury. Następnie ustawiono moc grzałki na 70\%, odnotowano kilka pomiarów dla nowej temperatury, a następnie pozostawiono
+układ na ok 1,5 godziny w celu osiągnięcia przez grzałkę oczekiwanej temperatury. Po upływie czasu dokonywano pomiarów co minutę, za każdym razem podwyższając moc grzałki o 1\% i powtarzając czynność aż moc wyniesie 100\%. Na koniec obniżono moc grzałki w celu wychłodzenia układu i po odczekaniu chwili wyłączono komputer oraz odłączono układ od prądu.
 \begin{figure}[H]
 \center
 \includegraphics[width=0.5\textwidth]{uklad.png}
 \end{figure}
 Na przedstawiony powyżej układ użyty w doświadczeniu składa się: źródło prądu zmiennego, uzwojenie pierwotne transformatora $n_p$, uzwojenie wtórne transformatora $n_w$, ferromagnetyczny rdzeń, termometr elektroniczny podłączony do próbki, woltomierz cyfrowy oraz grzałka. Całość układu podłączona jest do komputera ze specjalnym oprogramowaniem, dzięki któremu można zmieniać moc grzałki oraz który archiwizuje otrzymane wyniki i nanosi je na wykres zależności napięcia od temperatury.
 
-\section{Wyniki pomiarów}
+\section{Wyniki i analiza pomiarów}
+\subsection{Wyznaczanie temperatury Curie}
+Tabela danych pomiarowych wraz z niepewnościami.
+\begin{figure}[H]
 \begin{tabular}{lrrrr}
 \hline
 {} &T[$^\circ$C]&$\Delta T[^\circ$C]&U[mV]&$\Delta$ U[mV]\\
@@ -129,14 +137,18 @@ Na przedstawiony powyżej układ użyty w doświadczeniu składa się: źródło
 31 &  211.0 &  6.055 &   18.0 &   5.270 \\
 \hline
 \end{tabular}
-
-\section{Analiza pomiarów}
+\end{figure}
+W celu wyznaczenia temperatury Curie powyższe pomiary zostały przedstawione na rysunku 3:
 \begin{figure}[H]
-  \includegraphics{./Curie_proste.png}
+  \includegraphics{./Curie_proste.eps}
   \caption{Wykres zależności $U(T)$ z prostymi dla maksymalnego i minimalnego napięcia oraz prostą dopasowaną do najostrzejszej części wykresu}
 \end{figure}.
-\\
-\\Na wykresie 1 wartości napięcia utrzymują mniej-więcej(w zakresie błędów pomiarowych) stały poziom dla temperatur poniżej 128$^\circ$C (452mV - wynikający z maksymalnego namagnesowania rdzenia)i temperatur powyżej 201$^\circ$C (18mV). Prosta dopasowana do pomiarów z najwyższym spadkiem leży najpierw poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którąz w związku z tym możemy uznać za temperature Curie.
+%Opis do dopracowania po wstawieniu wykresow wyżej
+\\Na wykresie 1 wartości napięcia utrzymują mniej-więcej(w zakresie błędów pomiarowych) stały poziom dla temperatur poniżej 128$^\circ$C (452mV -
+wynikający z maksymalnego namagnesowania rdzenia)i temperatur powyżej 201$^\circ$C (18mV). Prosta dopasowana do pomiarów z najwyższym spadkiem leży najpierw
+poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którą w związku z tym możemy uznać za temperature Curie.
+\subsection{Wyznaczanie temperatury Curie-Weissa}
+Aby sprawdzić prawdziwość prawa Curie-Weissa oraz w celu wyznaczenia temperatury $\theta$ pomiary przekształcono na sposób zaprezentowany w poniższej tabeli oraz przedstawiono na wykresach, które, zgodnie z prawem Curie-Weisa, powinny przedstawiać zależność liniową.
 \begin{figure}
 \begin{tabular}{lrrrrrr}
 \toprule
@@ -161,22 +173,26 @@ Na przedstawiony powyżej układ użyty w doświadczeniu składa się: źródło
 \end{tabular}
 \end{figure}
 \begin{figure}[H]
-  \includegraphics{./Curie_odwrotnosc.png}
+  \includegraphics{./Curie_odwrotnosc.eps}
   \caption{Wykres zależności $\frac{1}{U}$(T) dla fazy paramagnetyka}
 \end{figure}
 \begin{figure}[H]
-  \includegraphics{./Curie_odjete.png}
+  \includegraphics{./Curie_odjete.eps}
   \caption{Wykres zależności $\frac{1}{U-U_{min}}$(T) dla fazy paramagnetyka}
 \end{figure}.
+%Opis do renowacji : pierwszy wykres git, niepewności rosną i zasadniczo liniowy, przesunięcie theta względem T_C, drugi przez niepewności nie nadaje się
+\\Do wykresu 4 dopasowano prostą przy użyciu funkcji \emph{polyfit}, biblioteki \emph{numpy} w Pytonie, z
+użyciem wag $\frac{1}{dy}$
 \\
-\\Zgodnie z prawem Curie-Weissa wykres 2 powinien być linią prostą, jednak choć dopasowanie prostej w zakresie niepewności jest możliwe, skala niepewności w porównaniu do wielkości pomiarów jest na tyle duża że przed potwierdzeniem tezy należało by popracować nad dokładnością pomiarów a następnie powtórzyć doświadczenie.
 
 \section{Analiza niepewności}
+%Do przejrzenia i ewentualnej poprawy
 Niepewności pomiarów temperatury została wyliczona jako iloczyn danego pomiaru i klasy urządzenia pomiarowego(0.005) + 5$^\circ$C
 Niepewności napięcia wyliczono tożsamą metodą dla klasy 0.01 i dodając 1mV. Metody użyte w analizie wyników nie były ściśle analityczne, co nie pozwala na bezpośrednie wyliczenie niepewności jednak można ją oszacować jako przedział maksymalnego spadku na $18c^\circ$ Pozostałe niepewności na wykresach zostały wyliczone przy użyciu metody propagacji niepewności.
 
 \section{Wnioski}
-Wyznaczona temperatura Curie wynosi $170(18)C^\circ$, jednak biorąc pod uwagę niepewność temperatury Curie, metoda, której użyto w tym doświadczeniu jest niedokładna i  nie nadaje się do jej wyznaczenia. Zależności wyliczone na podstawie wzoru (4) i przedstawione na wykresie 2 pasują do wykresu jednak niepewności punktów pomiarowych są zbyt duże by stanowiło to potwierdzenie tezy.Wykres 3 nienadaje się do analizy ze względu na zbyt duże niepewności i nie pozwalaja na potwierdzenie bądź odrzucenie tezy. 
+%Do przejrzenia i ewentualnej poprawy
+Wyznaczona temperatura Curie wynosi $170(18)C^\circ$, jednak biorąc pod uwagę niepewność temperatury Curie, metoda, której użyto w tym doświadczeniu jest niedokładna i  nie nadaje się do jej wyznaczenia. Zależności wyliczone na podstawie wzoru (4) i przedstawione na wykresie (2) pasują do wykresu jednak niepewności punktów pomiarowych są zbyt duże by stanowiło to potwierdzenie tezy.Wykres (3) nie nadaje się do analizy ze względu na zbyt duże niepewności i nie pozwala na potwierdzenie bądź odrzucenie tezy.
 
 
 \end{document}

@@ -137,17 +137,15 @@ Tabela danych pomiarowych wraz z niepewnościami.
 \hline
 \end{tabular}
 \end{figure}
-W celu wyznaczenia temperatury Curie powyższe pomiary zostały przedstawione na rysunku 3:
+W celu wyznaczenia temperatury Curie powyższe pomiary zostały przedstawione na rysunku (3):
 \begin{figure}[H]
   \includegraphics{./Curie_proste.eps}
   \caption{Wykres zależności $U(T)$ z prostymi dla maksymalnego i minimalnego napięcia oraz prostą dopasowaną do najostrzejszej części wykresu}
 \end{figure}.
 %Nie wiem czy coś jeszcze dopisać, chyba jest git
-\\Na wykresie 1 wartości napięcia utrzymują mniej-więcej(w zakresie błędów pomiarowych) stały poziom dla temperatur poniżej 128$^\circ$C (452mV -
-wynikający z maksymalnego namagnesowania rdzenia)i temperatur powyżej 201$^\circ$C (18mV). Prosta dopasowana do pomiarów z najwyższym spadkiem leży najpierw
-poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którą w związku z tym możemy uznać za temperature Curie. Jakościowy kształt wykresu czyli stały-łagodny_spadek-szybki_spadek-łagodny_spadek-stały odpowiada teoretycznemu rysunkowi 2 i tym samym potwierdza teorię.
+\\Na wykresie (1) wartości napięcia utrzymują mniej-więcej(w zakresie błędów pomiarowych) stały poziom dla temperatur poniżej 128$^\circ$C (452mV - wynikający z maksymalnego namagnesowania rdzenia) i temperatur powyżej 201$^\circ$C (18mV). Prosta dopasowana do pomiarów z najwyższym spadkiem leży najpierw poniżej, a następnie powyżej punktów pomiarowych i przechodzi przez nie w temperaturze $T = 170^\circ C$, którą w związku z tym możemy uznać za temperature Curie. Jakościowy kształt wykresu czyli stały-łagodny_spadek-szybki_spadek-łagodny_spadek-stały odpowiada teoretycznemu rysunkowi (2) i tym samym nie daje podstaw do odrzucenia teorii.
 \subsection{Wyznaczanie temperatury Curie-Weissa}
-Aby sprawdzić prawdziwość prawa Curie-Weissa oraz w celu wyznaczenia temperatury $\theta$ pomiary przekształcono na sposób zaprezentowany w poniższej tabeli oraz przedstawiono na wykresach, które, zgodnie z prawem Curie-Weisa, powinny przedstawiać zależność liniową.
+Wcelu sprawdzenia prawdziwości prawa Curie-Weissa oraz wyznaczenia temperatury $\theta$, pomiary przekształcono w sposób zaprezentowany w poniższej tabeli oraz przedstawiono na wykresach, które, zgodnie z prawem Curie-Weisa, powinny przedstawiać zależność liniową.
 \begin{figure}
 \begin{tabular}{lrrrrrr}
 \toprule
@@ -183,16 +181,14 @@ Niepewności przekształconych wartości zostały wyliczone z metody propagacji 
   \includegraphics{./Curie_odjete.eps}
   \caption{Wykres zależności $\frac{1}{U-U_{min}}$(T) dla fazy paramagnetyka}
 \end{figure}
-\\Wykres 4 jest zgodnie z założeniami, liniowy. Wraz ze spadkiem napięcia rosną jego niepewności, a co za tym idzie kolejne punkty pomiarowe są coraz bardziej wątpliwe. W końcowej części wykresu powinno następować wypłaszczenie (Całkowite wzbudzenie przez uzwojenie wtórne) jednak jest ono niewidoczne. Może to być spowodowane sporymi niepewnościami w tym obszarze lub wciąż zbyt niskimi temperaturami. Dla dopasowanej prostej widać przesunięcie $\theta$ względem $T_C$ o około $5^\circ$. Do wykresu 4 dopasowano prostą przy użyciu funkcji \emph{polyfit}, biblioteki \emph{numpy} w Pytonie, z
-użyciem wag $\frac{1}{dy}$. Dla wykresu 5 $U_{min}$ zostało oszacowane jako najmniejsza zmierzona wartość niapięcia. Jednak wykres ten jest, ze względu na szybko rosnące różnice i ogromne niepewności, nieczytelny i nie został poddany analizie. 
+\\Wykres (4), zgodnie z założeniami, przedstawia zależność liniową. Wraz ze spadkiem napięcia rosną jego niepewności, a co za tym idzie kolejne punkty pomiarowe są coraz bardziej wątpliwe. W końcowej części wykresu powinno następować wypłaszczenie (całkowite wzbudzenie przez uzwojenie wtórne), jednak jest ono niewidoczne. Może to być spowodowane sporymi niepewnościami w tym obszarze lub wciąż zbyt niskimi temperaturami. Dla dopasowanej prostej widać przesunięcie $\theta$ względem $T_C$ o około $5^\circ$. Do wykresu (4) dopasowano prostą przy użyciu funkcji \emph{polyfit}, biblioteki \emph{numpy} w Pytonie, z użyciem wag $\frac{1}{dy}$. Dla wykresu (5) $U_{min}$ zostało oszacowane jako najmniejsza zmierzona wartość niapięcia. Jednak wykres ten, ze względu na szybko rosnące różnice i ogromne niepewności, jest nieczytelny i nie został poddany analizie. 
 \\
-
 \section{Analiza niepewności}
 Niepewności pomiarów temperatury została wyliczona jako iloczyn danego pomiaru i klasy urządzenia pomiarowego(0.005) + 5$^\circ$C
-Niepewności napięcia wyliczono tożsamą metodą dla klasy 0.01 i dodając 1mV.Metody użyte w analizie wyników nie były ściśle analityczne, co nie pozwala na bezpośrednie wyliczenie niepewności jednak można ją oszacować jako przedział maksymalnego spadku na $18c^\circ$.
+Niepewności napięcia wyliczono tożsamą metodą dla klasy 0.01 i dodając 1mV. Metody użyte w analizie wyników nie były ściśle analityczne, co nie pozwala na bezpośrednie wyliczenie niepewności jednak można ją oszacować jako przedział maksymalnego spadku na $18c^\circ$.
 
 \section{Wnioski}
-Wykres (2) jest jakościowo zgodny z teoretycznym. Wyznaczona temperatura Curie wynosi $170(18)C^\circ$, jednak biorąc pod uwagę niepewność temperatury Curie, metoda, której użyto w tym doświadczeniu jest niezbyt niedokładna i nie nadaje się do jej wyznaczenia w celach praktycznych. Zależności wyliczone na podstawie wzoru (4) i przedstawione na wykresie (4) zdają się potwierdzać prawdziwość prawa Curie-Weissa .Wykres (5) nie nadaje się do analizy ze względu na zbyt duże niepewności i nie pozwala na potwierdzenie bądź odrzucenie tezy.
+Wykres (2) jest jakościowo zgodny z teoretycznym. Wyznaczona temperatura Curie wynosi $170(18)C^\circ$, jednak biorąc pod uwagę niepewność temperatury Curie, metoda, której użyto w tym doświadczeniu jest niezbyt niedokładna i nie nadaje się do jej wyznaczenia w celach praktycznych. Zależności wyliczone na podstawie wzoru (4) i przedstawione na wykresie (4) zdają się potwierdzać prawdziwość prawa Curie-Weissa. Wykres (5) nie nadaje się do analizy ze względu na zbyt duże niepewności i nie pozwala na potwierdzenie bądź odrzucenie tezy.
 
 
 \end{document}
